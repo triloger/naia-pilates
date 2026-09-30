@@ -1,67 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" height="100%">
   <defs>
-    <linearGradient id="fluidGradEs" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4A7062" />
-      <stop offset="50%" stop-color="#7A9A8B" />
-      <stop offset="100%" stop-color="#9FBAB0" />
+    <linearGradient id="kineticDarkEs" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#151A18" />
+      <stop offset="45%" stop-color="#2D3A35" />
+      <stop offset="100%" stop-color="#0E1211" />
     </linearGradient>
+    <linearGradient id="ribbonSheenEs" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#556E63" />
+      <stop offset="50%" stop-color="#8DA79B" />
+      <stop offset="85%" stop-color="#C2A884" />
+      <stop offset="100%" stop-color="#52685E" />
+    </linearGradient>
+    <linearGradient id="orbGoldEs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2CCA8" />
+      <stop offset="50%" stop-color="#BE9F73" />
+      <stop offset="100%" stop-color="#8A6C44" />
+    </linearGradient>
+    <filter id="galleryShadowEs" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#101413" flood-opacity="0.12" />
+    </filter>
   </defs>
 
   <style>
-    .brand-title-es {
+    .avant-title-es {
       font-family: 'Cormorant Garamond', 'Didot', 'Playfair Display', serif;
-      font-size: 64px;
-      font-weight: 400;
-      letter-spacing: 0.18em;
-      fill: #1C2E35;
+      font-size: 70px;
+      font-weight: 300;
+      letter-spacing: 0.32em;
+      fill: #151A18;
     }
-    .brand-subtitle-es {
-      font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
-      font-size: 11.5px;
+    .avant-sub-es {
+      font-family: 'Montserrat', 'Inter', sans-serif;
+      font-size: 10.5px;
       font-weight: 500;
-      letter-spacing: 0.38em;
-      fill: #617872;
-    }
-    .accent-dot-es {
-      fill: #7A9A8B;
+      letter-spacing: 0.52em;
+      fill: #6E7C76;
     }
   </style>
 
-  <rect width="840" height="320" fill="transparent" />
+  <rect width="880" height="340" fill="transparent" />
 
-  <g transform="translate(50, 40)">
-    <!-- ICONO: Flujo de Náyade y Columna Vertebral -->
-    <g id="icon-mark-es" transform="translate(40, 10)">
-      <circle cx="100" cy="110" r="94" fill="none" stroke="#E3EAE6" stroke-width="1.2" stroke-dasharray="3 3"/>
-      <circle cx="100" cy="110" r="88" fill="#F8FAF9" stroke="#CFDBD5" stroke-width="0.8"/>
+  <g transform="translate(50, 45)">
+    <!-- ESCULTURA: El Núcleo Cinético (Cinta Brâncuși) -->
+    <g id="kinetic-sculpture-es" transform="translate(30, 10)" filter="url(#galleryShadowEs)">
+      <ellipse cx="105" cy="115" rx="88" ry="88" fill="none" stroke="#E2E7E4" stroke-width="0.75" stroke-dasharray="2 4" />
+      <circle cx="105" cy="115" r="74" fill="#FBFDFC" stroke="#DCE4E0" stroke-width="0.5" />
 
-      <!-- Onda ascendente izquierda -->
-      <path d="M 72 170 C 65 140, 70 95, 78 62 C 80 54, 86 52, 90 60 C 95 72, 90 100, 86 125 C 83 145, 80 162, 72 170 Z" 
-            fill="url(#fluidGradEs)" opacity="0.95" />
-      
-      <!-- Cinta de columna vertebral en transición -->
-      <path d="M 85 64 C 95 85, 120 145, 134 162 C 137 166, 142 165, 140 158 C 132 135, 115 88, 102 66 C 96 56, 88 56, 85 64 Z" 
-            fill="#1C2E35" opacity="0.85" />
+      <path d="M 88 175 C 70 145, 68 85, 96 55 C 104 46, 114 48, 110 60 C 102 92, 100 135, 125 168 C 128 172, 124 178, 118 178 C 108 178, 96 178, 88 175 Z"
+            fill="url(#kineticDarkEs)" opacity="0.9" />
 
-      <!-- Cresta derecha -->
-      <path d="M 124 165 C 130 135, 133 90, 126 58 C 124 49, 129 46, 133 52 C 140 64, 144 95, 140 128 C 137 150, 132 162, 124 165 Z" 
-            fill="url(#fluidGradEs)" />
+      <path d="M 70 162 C 60 120, 68 68, 86 44 C 92 36, 100 38, 102 48 C 105 65, 88 115, 82 142 C 80 152, 90 158, 98 152 C 114 138, 132 94, 138 58 C 140 48, 148 48, 150 56 C 152 75, 142 124, 132 155 C 128 168, 120 178, 108 178 C 92 178, 76 174, 70 162 Z"
+            fill="url(#ribbonSheenEs)" />
 
-      <!-- Perlas de respiración (Diéresis) -->
-      <circle cx="97" cy="40" r="4" fill="url(#fluidGradEs)" />
-      <circle cx="113" cy="40" r="4" fill="url(#fluidGradEs)" />
+      <path d="M 86 44 C 95 80, 115 130, 140 172" fill="none" stroke="url(#orbGoldEs)" stroke-width="1.2" stroke-linecap="round" />
 
-      <path d="M 45 110 C 65 105, 75 115, 95 110 C 115 105, 135 115, 155 110" 
-            fill="none" stroke="#7A9A8B" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+      <circle cx="95" cy="24" r="4.5" fill="url(#orbGoldEs)" />
+      <circle cx="112" cy="18" r="3.5" fill="url(#orbGoldEs)" />
+
+      <line x1="105" y1="185" x2="105" y2="202" stroke="#658074" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
     </g>
 
-    <!-- PALABRA DE MARCA EN ESPAÑOL -->
-    <g transform="translate(290, 115)">
-      <text x="0" y="0" class="brand-title-es">NAÏA</text>
-      <text x="4" y="38" class="brand-subtitle-es">ESTUDIO DE PILATES</text>
+    <!-- TIPOGRAFÍA EN ESPAÑOL -->
+    <g transform="translate(295, 118)">
+      <text x="0" y="0" class="avant-title-es">NAÏA</text>
+      <text x="4" y="38" class="avant-sub-es">ESTUDIO DE PILATES</text>
 
-      <line x1="4" y1="16" x2="340" y2="16" stroke="#D1DDD8" stroke-width="1" />
-      <circle cx="172" cy="16" r="2.5" class="accent-dot-es" />
+      <line x1="4" y1="14" x2="380" y2="14" stroke="#D1DBD6" stroke-width="0.8" />
+      <circle cx="175" cy="14" r="2" fill="#BE9F73" />
     </g>
   </g>
 </svg>

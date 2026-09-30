@@ -1,68 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" height="100%">
   <defs>
-    <linearGradient id="bronzeGradEs" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D4BA97" />
-      <stop offset="45%" stop-color="#B8976C" />
-      <stop offset="100%" stop-color="#967448" />
+    <linearGradient id="monolithObsidianEs" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D2724" />
+      <stop offset="50%" stop-color="#1B1715" />
+      <stop offset="100%" stop-color="#0E0C0B" />
     </linearGradient>
-    <linearGradient id="espressoGradEs" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2B2523" />
-      <stop offset="100%" stop-color="#1A1615" />
+    <linearGradient id="champagneSpecularEs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAD9C2" />
+      <stop offset="40%" stop-color="#C5A47C" />
+      <stop offset="100%" stop-color="#93724B" />
     </linearGradient>
+    <filter id="monolithShadowEs" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0E0C0B" flood-opacity="0.14" />
+    </filter>
   </defs>
 
   <style>
-    .arch-title-es {
-      font-family: 'Bodoni MT', 'Didot', 'Cinzel', 'Playfair Display', serif;
-      font-size: 68px;
-      font-weight: 500;
-      letter-spacing: 0.22em;
-      fill: #221E1C;
+    .monolith-title-es {
+      font-family: 'Bodoni MT', 'Didot', 'Playfair Display', serif;
+      font-size: 72px;
+      font-weight: 400;
+      letter-spacing: 0.35em;
+      fill: #1A1614;
     }
-    .arch-subtitle-es {
+    .monolith-sub-es {
       font-family: 'Futura', 'Century Gothic', 'Montserrat', sans-serif;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 500;
-      letter-spacing: 0.45em;
-      fill: #8A7E78;
-    }
-    .diaeresis-dot-es {
-      fill: url(#bronzeGradEs);
+      letter-spacing: 0.58em;
+      fill: #7D736C;
     }
   </style>
 
-  <rect width="840" height="320" fill="transparent" />
+  <rect width="880" height="340" fill="transparent" />
 
-  <g transform="translate(50, 40)">
-    <!-- MONOGRAMA: Geometría de Precisión y Esferas de Diéresis -->
-    <g id="arch-icon-es" transform="translate(45, 15)">
-      <polygon points="100,10 185,110 100,210 15,110" fill="none" stroke="#EAE4DC" stroke-width="1.2" />
-      <circle cx="100" cy="110" r="76" fill="none" stroke="#D8CFC4" stroke-width="0.8" />
-      <circle cx="100" cy="110" r="72" fill="#FAF8F5" />
+  <g transform="translate(50, 45)">
+    <!-- MONOLITO: Tensión y Equilibrio Suspendido -->
+    <g id="monolith-sculpture-es" transform="translate(35, 12)" filter="url(#monolithShadowEs)">
+      <polygon points="100,6 182,112 100,218 18,112" fill="none" stroke="#EAE4DC" stroke-width="0.8" />
+      <circle cx="100" cy="112" r="76" fill="#FDFBF8" stroke="#DCD3C7" stroke-width="0.6" />
 
-      <!-- Columnas del monograma 'N' -->
-      <line x1="78" y1="62" x2="78" y2="158" stroke="url(#espressoGradEs)" stroke-width="4.5" stroke-linecap="round" />
-      <circle cx="78" cy="60" r="2.5" fill="url(#bronzeGradEs)" />
-      <circle cx="78" cy="160" r="2.5" fill="url(#bronzeGradEs)" />
+      <path d="M 72 65 L 82 65 L 82 159 L 72 159 Z" fill="url(#monolithObsidianEs)" />
+      <polygon points="72,65 82,65 77,58" fill="url(#champagneSpecularEs)" />
+      <polygon points="72,159 82,159 77,166" fill="url(#champagneSpecularEs)" />
 
-      <path d="M 79 64 L 121 156" stroke="url(#bronzeGradEs)" stroke-width="3" stroke-linecap="round" />
+      <path d="M 118 65 L 128 65 L 128 159 L 118 159 Z" fill="url(#monolithObsidianEs)" />
+      <polygon points="118,65 128,65 123,58" fill="url(#champagneSpecularEs)" />
+      <polygon points="118,159 128,159 123,166" fill="url(#champagneSpecularEs)" />
 
-      <line x1="122" y1="62" x2="122" y2="158" stroke="url(#espressoGradEs)" stroke-width="4.5" stroke-linecap="round" />
-      <circle cx="122" cy="60" r="2.5" fill="url(#bronzeGradEs)" />
-      <circle cx="122" cy="160" r="2.5" fill="url(#bronzeGradEs)" />
+      <path d="M 82 68 L 118 156 L 114 158 L 78 70 Z" fill="url(#champagneSpecularEs)" opacity="0.95" />
 
-      <!-- Esferas gemelas de alineación (Diéresis) -->
-      <circle cx="93" cy="38" r="4.5" class="diaeresis-dot-es" />
-      <circle cx="107" cy="38" r="4.5" class="diaeresis-dot-es" />
+      <line x1="88" y1="42" x2="88" y2="28" stroke="#B39266" stroke-width="0.75" stroke-dasharray="1 2"/>
+      <circle cx="88" cy="24" r="5" fill="url(#champagneSpecularEs)" />
 
-      <line x1="50" y1="110" x2="150" y2="110" stroke="#B8976C" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"/>
+      <line x1="112" y1="42" x2="112" y2="20" stroke="#B39266" stroke-width="0.75" stroke-dasharray="1 2"/>
+      <circle cx="112" cy="16" r="4" fill="url(#champagneSpecularEs)" />
+
+      <line x1="38" y1="112" x2="162" y2="112" stroke="#C5A47C" stroke-width="0.75" stroke-dasharray="2 3" opacity="0.7"/>
     </g>
 
-    <!-- TIPOGRAFÍA EN ESPAÑOL -->
-    <g transform="translate(290, 115)">
-      <text x="0" y="0" class="arch-title-es">NAÏA</text>
-      <text x="4" y="38" class="arch-subtitle-es">ESTUDIO DE PILATES</text>
-      <line x1="4" y1="16" x2="350" y2="16" stroke="url(#bronzeGradEs)" stroke-width="1.2" />
+    <!-- PALABRA EN ESPAÑOL -->
+    <g transform="translate(295, 118)">
+      <text x="0" y="0" class="monolith-title-es">NAÏA</text>
+      <text x="4" y="38" class="monolith-sub-es">ESTUDIO DE PILATES</text>
+
+      <line x1="4" y1="14" x2="385" y2="14" stroke="url(#champagneSpecularEs)" stroke-width="1.2" />
     </g>
   </g>
 </svg>
