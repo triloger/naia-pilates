@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naïa Pilates Studio — Dirección de Arte Vanguardista y Sistema Escultórico</title>
+  <title>Naïa Pilates Studio — Propuestas de Identidad y Sistema de Marca</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Tenor+Sans&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Century+Gothic&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -16,21 +16,18 @@
       theme: {
         extend: {
           colors: {
-            alabaster: '#FAF8F5',
-            stoneBg: '#F4F1EA',
-            oceanSlate: '#151A18',
-            sageGreen: '#556E63',
-            mistSage: '#8DA79B',
-            espressoDark: '#1A1614',
-            champagneGold: '#C5A47C',
-            terracotta: '#934331',
-            ochreWarm: '#CF854E',
-            oliveLeaf: '#55604C',
+            cabernetDark: '#461E22',
+            cabernetPlinth: '#522428',
+            roseQuartz: '#F2B8B5',
+            roseSoft: '#FCE1DF',
+            roseGold: '#C98D83',
+            alabasterStone: '#FBF8F5',
+            wineBorder: '#EED8D6',
+            wineShadow: '#2D1113'
           },
           fontFamily: {
-            serif: ['Cormorant Garamond', 'Playfair Display', 'serif'],
-            didot: ['Playfair Display', 'serif'],
-            tenor: ['Tenor Sans', 'serif'],
+            serif: ['Playfair Display', 'Cormorant Garamond', 'serif'],
+            didot: ['Bodoni MT', 'Didot', 'Playfair Display', 'serif'],
             sans: ['Montserrat', 'Inter', 'sans-serif'],
             body: ['Inter', 'sans-serif']
           }
@@ -40,470 +37,482 @@
   </script>
   <style>
     .glass-card {
-      background: rgba(255, 255, 255, 0.84);
+      background: rgba(251, 248, 245, 0.88);
       backdrop-filter: blur(14px);
-      border: 1px solid rgba(220, 215, 205, 0.6);
+      border: 1px solid rgba(238, 216, 214, 0.7);
     }
     .dark .glass-card {
-      background: rgba(20, 23, 25, 0.9);
+      background: rgba(45, 20, 23, 0.92);
       backdrop-filter: blur(14px);
-      border: 1px solid rgba(65, 70, 75, 0.45);
+      border: 1px solid rgba(140, 80, 85, 0.45);
     }
     .custom-shadow {
-      box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 25px 50px -15px rgba(70, 30, 34, 0.12);
     }
-    .sculptural-glow {
-      box-shadow: 0 0 40px rgba(197, 164, 124, 0.15);
+    .rose-glow {
+      box-shadow: 0 0 40px rgba(242, 184, 181, 0.25);
     }
   </style>
 </head>
-<body class="bg-[#FAF8F5] text-[#24211E] dark:bg-[#111314] dark:text-[#E8E6E3] font-body transition-colors duration-300">
+<body class="bg-[#FBF8F5] text-[#3D1A1E] dark:bg-[#200D0F] dark:text-[#FCE1DF] font-body transition-colors duration-300">
 
   <!-- NAVEGACIÓN SUPERIOR -->
   <header class="sticky top-0 z-50 glass-card transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <span class="font-serif tracking-[0.3em] text-2xl font-light text-oceanSlate dark:text-[#EAE6DF]">NAÏA</span>
-        <span class="text-xs uppercase tracking-[0.4em] text-champagneGold font-sans font-medium border-l pl-3 border-gray-300 dark:border-gray-700" data-i18n="navSubtitle">Atelier de Movimiento</span>
+        <span class="font-serif tracking-[0.28em] text-2xl font-normal text-cabernetDark dark:text-roseQuartz">NAÏA</span>
+        <span class="text-xs uppercase tracking-[0.35em] text-roseGold font-sans font-medium border-l pl-3 border-[#EED8D6] dark:border-[#5C2A2E]" data-i18n="navSubtitle">Pilates Studio</span>
       </div>
 
       <div class="flex items-center space-x-4 md:space-x-6">
-        <nav class="hidden md:flex space-x-7 text-xs uppercase tracking-[0.22em] font-sans">
-          <a href="#conceptos" class="hover:text-champagneGold transition-colors" data-i18n="navConcepts">3 Obras de Arte</a>
-          <a href="#experiencia" class="hover:text-champagneGold transition-colors" data-i18n="navExperience">Santuario Galería</a>
-          <a href="#comparativa" class="hover:text-champagneGold transition-colors" data-i18n="navComparison">Logo vs. Sistema</a>
-          <a href="#precios" class="hover:text-champagneGold transition-colors text-terracotta dark:text-ochreWarm font-semibold" data-i18n="navPricing">Inversión</a>
+        <nav class="hidden md:flex space-x-7 text-xs uppercase tracking-[0.2em] font-sans">
+          <a href="#referencia" class="hover:text-roseGold transition-colors" data-i18n="navMoodboard">Matriz Creativa</a>
+          <a href="#conceptos" class="hover:text-roseGold transition-colors" data-i18n="navConcepts">3 Propuestas</a>
+          <a href="#experiencia" class="hover:text-roseGold transition-colors" data-i18n="navExperience">Santuario en Acción</a>
+          <a href="#comparativa" class="hover:text-roseGold transition-colors" data-i18n="navComparison">Logo vs. Sistema</a>
+          <a href="#precios" class="hover:text-roseGold transition-colors text-cabernetDark dark:text-roseQuartz font-semibold" data-i18n="navPricing">Inversión</a>
         </nav>
 
         <!-- Selector de Idioma -->
-        <button id="langToggle" class="px-2.5 py-1.5 rounded-full border border-gray-300 dark:border-gray-700 text-[11px] font-sans font-medium uppercase tracking-wider hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center gap-1" title="Cambiar Idioma / Switch Language">
+        <button id="langToggle" class="px-2.5 py-1.5 rounded-full border border-roseGold/40 text-[11px] font-sans font-medium uppercase tracking-wider hover:bg-roseQuartz/20 transition-colors flex items-center gap-1" title="Cambiar Idioma / Switch Language">
           <span id="currentLangLabel">ES</span>
           <span class="text-[9px] text-gray-400">/ EN</span>
         </button>
 
-        <!-- Modo Estudio (Luz / Noche) -->
-        <button id="themeToggle" class="p-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-xs flex items-center gap-1.5" title="Modo Iluminación del Estudio (Luz/Noche)">
+        <!-- Modo Iluminación Estudio (Luz / Noche) -->
+        <button id="themeToggle" class="p-2 rounded-full border border-roseGold/40 hover:bg-roseQuartz/20 transition-colors text-xs flex items-center gap-1.5" title="Modo Iluminación del Estudio (Luz/Noche)">
           <span id="themeIcon">🌙</span>
         </button>
 
-        <a href="#aprobacion" class="bg-oceanSlate text-white dark:bg-champagneGold dark:text-[#1A1615] px-4 py-2 rounded-full text-xs uppercase tracking-[0.2em] font-sans hover:opacity-90 transition-opacity font-medium" data-i18n="btnReview">
-          Elegir Obra
+        <a href="#aprobacion" class="bg-cabernetDark text-roseQuartz dark:bg-roseQuartz dark:text-cabernetDark px-4 py-2 rounded-full text-xs uppercase tracking-[0.18em] font-sans hover:opacity-90 transition-opacity font-medium" data-i18n="btnReview">
+          Elegir Propuesta
         </a>
       </div>
     </div>
   </header>
 
-  <!-- SECCIÓN HERO ESCULTÓRICA -->
+  <!-- HERO SECTION CON PALETA CABERNET & BLUSH -->
   <section class="max-w-7xl mx-auto px-6 pt-16 pb-12 text-center">
-    <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-champagneGold/40 bg-champagneGold/10 text-champagneGold text-xs uppercase tracking-[0.32em] font-sans font-medium" data-i18n="heroBadge">
-      Dirección de Arte de Vanguardia • Propuestas Escultóricas
+    <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-roseGold/40 bg-roseQuartz/20 text-cabernetDark dark:text-roseQuartz text-xs uppercase tracking-[0.3em] font-sans font-medium" data-i18n="heroBadge">
+      Identidad Visual Curada • Paleta Cabernet & Rose Quartz
     </div>
-    <h1 class="font-serif text-5xl md:text-8xl font-light tracking-wide text-oceanSlate dark:text-alabaster mb-5" data-i18n="heroTitle">
-      La Escultura del Movimiento
+    <h1 class="font-serif text-5xl md:text-8xl font-light tracking-wide text-cabernetDark dark:text-roseQuartz mb-4" data-i18n="heroTitle">
+      A Stronger, Calmer, Happier You
     </h1>
-    <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-300 text-base md:text-lg font-light leading-relaxed mb-8" data-i18n="heroDesc">
-      Tres exploraciones artísticas para <strong class="font-normal text-oceanSlate dark:text-white">Naïa Pilates Studio</strong>. Inspiradas en la escultura cinética de Brâncuși, el equilibrio gravitacional de Calder y las formas biomórficas de Arp y Noguchi.
+    <p class="max-w-2xl mx-auto text-gray-700 dark:text-roseSoft text-base md:text-lg font-light leading-relaxed mb-8" data-i18n="heroDesc">
+      Tres propuestas de marca desarrolladas a partir de la matriz de exploración gráfica de <strong class="font-normal text-cabernetDark dark:text-white">Naïa Pilates Studio</strong>. Una fusión entre arquitectura clásica, curvas cinéticas de reformer y el calor contemporáneo de la terracota borgoña.
     </p>
 
     <!-- Barra de Datos Rápidos -->
-    <div class="inline-flex flex-wrap justify-center items-center gap-6 md:gap-10 py-3 px-8 rounded-2xl glass-card text-xs uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400 font-sans custom-shadow">
-      <div><span class="text-oceanSlate dark:text-white font-semibold">3</span> <span data-i18n="statConcepts">Esculturas Vectoriales</span></div>
-      <div class="h-3 w-px bg-gray-300 dark:bg-gray-700"></div>
-      <div><span class="text-oceanSlate dark:text-white font-semibold">6</span> <span data-i18n="statMockups">Renders de Galería</span></div>
-      <div class="h-3 w-px bg-gray-300 dark:bg-gray-700"></div>
-      <div><span class="text-oceanSlate dark:text-white font-semibold">3</span> <span data-i18n="statTiers">Niveles de Atelier</span></div>
+    <div class="inline-flex flex-wrap justify-center items-center gap-6 md:gap-10 py-3 px-8 rounded-2xl glass-card text-xs uppercase tracking-[0.2em] text-cabernetDark/80 dark:text-roseSoft font-sans custom-shadow">
+      <div><span class="text-cabernetDark dark:text-white font-semibold">1</span> <span data-i18n="statMatrix">Matriz Creativa (9 Logos)</span></div>
+      <div class="h-3 w-px bg-roseGold/30"></div>
+      <div><span class="text-cabernetDark dark:text-white font-semibold">3</span> <span data-i18n="statConcepts">Propuestas Vectoriales</span></div>
+      <div class="h-3 w-px bg-roseGold/30"></div>
+      <div><span class="text-cabernetDark dark:text-white font-semibold">6</span> <span data-i18n="statMockups">Renders de Estudio</span></div>
     </div>
   </section>
 
-  <!-- SECCIÓN: MANIFIESTO ARTÍSTICO -->
-  <section class="max-w-5xl mx-auto px-6 py-10">
-    <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden custom-shadow border-l-4 border-champagneGold">
-      <div class="absolute -right-8 -bottom-10 text-9xl font-serif text-gray-200/50 dark:text-gray-800/25 select-none pointer-events-none">
-        ï
+  <!-- SECCIÓN: MATRIZ DE EXPLORACIÓN DE LA MARCA (USER REFERENCE IMAGE) -->
+  <section id="referencia" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="glass-card rounded-3xl p-8 md:p-12 custom-shadow">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <span class="text-xs uppercase tracking-[0.3em] text-roseGold font-sans font-semibold" data-i18n="matrixBadge">Punto de Partida Creativo</span>
+        <h2 class="font-serif text-3xl md:text-4xl text-cabernetDark dark:text-roseQuartz mt-1" data-i18n="matrixTitle">La Matriz de Inspiración</h2>
+        <p class="text-xs md:text-sm text-gray-600 dark:text-roseSoft mt-2 leading-relaxed" data-i18n="matrixSubtitle">
+          De las 9 exploraciones iniciales de tipografía y relieves en 3D sobre fondo borgoña, seleccionamos y refinamos las tres direcciones más potentes y versátiles para la identidad completa del estudio.
+        </p>
       </div>
-      <div class="max-w-2xl">
-        <span class="text-xs uppercase tracking-[0.3em] text-champagneGold font-sans font-semibold" data-i18n="manifestoBadge">Manifiesto Estético</span>
-        <h2 class="font-serif text-3xl md:text-4xl text-oceanSlate dark:text-white mt-2 mb-4" data-i18n="manifestoTitle">
-          Contrología como Obra Viva
-        </h2>
-        <p class="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed mb-4" data-i18n="manifestoP1">
-          Joseph Pilates concibió su método no como una tabla de ejercicios mecánicos, sino como un <strong>arte corporal de alineación y control absoluto</strong>. Al fusionar la etimología de *Naïa* (la ninfa de agua viva y el anhelo del movimiento) con la escultura moderna, convertimos el estudio en un santuario estético donde el cuerpo esculpe su propia fuerza.
-        </p>
-        <p class="text-gray-600 dark:text-gray-300 text-sm md:text-base leading-relaxed" data-i18n="manifestoP2">
-          La diéresis (<strong class="text-champagneGold">ï</strong>) deja de ser un simple signo ortográfico: se transmuta en dos esferas celestiales de contrapeso cinético, recordando la sincronía constante entre tensión y vacío.
-        </p>
+
+      <div class="rounded-2xl overflow-hidden border border-[#EED8D6] dark:border-[#5C2A2E] shadow-xl max-w-4xl mx-auto">
+        <img src="assets/mockups/client_reference_grid.jpg" alt="Matriz de 9 exploraciones para Naïa Pilates Studio" class="w-full h-auto object-cover">
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-gray-600 dark:text-roseSoft">
+        <div class="p-4 rounded-xl bg-white/60 dark:bg-black/30 border border-roseGold/20">
+          <strong class="text-cabernetDark dark:text-roseQuartz block mb-1">Fila Superior (Centro):</strong>
+          Seleccionada para la <strong>Propuesta 1 (Alta Costura)</strong>: proporciones verticales estilizadas y diéresis elevada.
+        </div>
+        <div class="p-4 rounded-xl bg-white/60 dark:bg-black/30 border border-roseGold/20">
+          <strong class="text-cabernetDark dark:text-roseQuartz block mb-1">Fila Inferior (Izquierda):</strong>
+          Seleccionada para la <strong>Propuesta 2 (Cinta Ondulada)</strong>: bases de cinta fluida y movimiento de reformer.
+        </div>
+        <div class="p-4 rounded-xl bg-white/60 dark:bg-black/30 border border-roseGold/20">
+          <strong class="text-cabernetDark dark:text-roseQuartz block mb-1">Fila Superior (Izquierda):</strong>
+          Seleccionada para la <strong>Propuesta 3 (Arco Orgánico)</strong>: minúscula fluida y armonía geométrica acogedora.
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN: LAS 3 PROPUESTAS VANGUARDISTAS -->
+  <!-- SECCIÓN: LAS 3 PROPUESTAS CURADAS -->
   <section id="conceptos" class="max-w-7xl mx-auto px-6 py-14">
     <div class="text-center mb-10">
-      <span class="text-xs uppercase tracking-[0.3em] text-champagneGold font-sans font-semibold" data-i18n="conceptsBadge">Propuestas de Galería</span>
-      <h2 class="font-serif text-4xl md:text-5xl text-oceanSlate dark:text-white mt-2" data-i18n="conceptsTitle">Tres Esculturas de Marca</h2>
-      <p class="text-gray-500 dark:text-gray-400 text-sm mt-2 max-w-lg mx-auto" data-i18n="conceptsSubtitle">
-        Interactúa con cada obra para apreciar su tensión espacial, paleta matérica y aplicación tipográfica.
+      <span class="text-xs uppercase tracking-[0.3em] text-roseGold font-sans font-semibold" data-i18n="proposalsBadge">Propuestas Vectoriales</span>
+      <h2 class="font-serif text-4xl md:text-5xl text-cabernetDark dark:text-roseQuartz mt-2" data-i18n="proposalsTitle">Tres Caminos de Identidad</h2>
+      <p class="text-gray-600 dark:text-roseSoft text-sm mt-2 max-w-lg mx-auto" data-i18n="proposalsSubtitle">
+        Diseñadas en vectores de alta precisión, listas para señalética exterior, bordado en calcetines y papelería.
       </p>
 
       <!-- Selector de Subtítulo del Logo (ES / EN) -->
-      <div class="mt-6 inline-flex items-center p-1.5 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-black/30 text-xs font-sans">
-        <span class="text-gray-400 mr-2.5 pl-2 text-[11px] uppercase tracking-wider" data-i18n="lblSubtitle">Subtítulo:</span>
-        <button onclick="toggleLogoSubtitle('es')" id="sub-es" class="px-3 py-1 rounded-lg bg-oceanSlate text-white dark:bg-champagneGold dark:text-[#1A1615] font-medium transition-all">
+      <div class="mt-6 inline-flex items-center p-1.5 rounded-xl border border-roseGold/30 bg-white/60 dark:bg-black/30 text-xs font-sans">
+        <span class="text-gray-500 dark:text-gray-400 mr-2.5 pl-2 text-[11px] uppercase tracking-wider" data-i18n="lblSubtitle">Subtítulo:</span>
+        <button onclick="toggleLogoSubtitle('es')" id="sub-es" class="px-3 py-1 rounded-lg bg-cabernetDark text-roseQuartz dark:bg-roseQuartz dark:text-cabernetDark font-medium transition-all">
           ESTUDIO DE PILATES
         </button>
-        <button onclick="toggleLogoSubtitle('en')" id="sub-en" class="px-3 py-1 rounded-lg text-gray-500 hover:text-oceanSlate dark:hover:text-white transition-all">
+        <button onclick="toggleLogoSubtitle('en')" id="sub-en" class="px-3 py-1 rounded-lg text-gray-500 hover:text-cabernetDark dark:hover:text-roseQuartz transition-all">
           PILATES STUDIO
         </button>
       </div>
     </div>
 
     <!-- Pestañas de Conceptos -->
-    <div class="flex justify-center border-b border-gray-200 dark:border-gray-800 mb-10 overflow-x-auto pb-1">
+    <div class="flex justify-center border-b border-[#EED8D6] dark:border-[#5C2A2E] mb-10 overflow-x-auto pb-1">
       <div class="flex space-x-3 md:space-x-6">
-        <button onclick="switchConcept(1)" id="tab-1" class="py-3 px-4 text-xs md:text-sm uppercase tracking-[0.18em] font-sans transition-all text-sageGreen border-b-2 border-sageGreen font-semibold">
-          01. La Cinta Cinética
+        <button onclick="switchConcept(1)" id="tab-1" class="py-3 px-4 text-xs md:text-sm uppercase tracking-[0.18em] font-sans transition-all text-cabernetDark dark:text-roseQuartz border-b-2 border-cabernetDark dark:border-roseQuartz font-semibold">
+          01. Editorial Arquitectónico
         </button>
-        <button onclick="switchConcept(2)" id="tab-2" class="py-3 px-4 text-xs md:text-sm uppercase tracking-[0.18em] font-sans transition-all text-gray-400 hover:text-oceanSlate dark:hover:text-white border-b-2 border-transparent">
-          02. El Monolito Suspendido
+        <button onclick="switchConcept(2)" id="tab-2" class="py-3 px-4 text-xs md:text-sm uppercase tracking-[0.18em] font-sans transition-all text-gray-400 hover:text-cabernetDark dark:hover:text-roseQuartz border-b-2 border-transparent">
+          02. La Cinta Ondulada
         </button>
-        <button onclick="switchConcept(3)" id="tab-3" class="py-3 px-4 text-xs md:text-sm uppercase tracking-[0.18em] font-sans transition-all text-gray-400 hover:text-oceanSlate dark:hover:text-white border-b-2 border-transparent">
-          03. El Diafragma Biomórfico
+        <button onclick="switchConcept(3)" id="tab-3" class="py-3 px-4 text-xs md:text-sm uppercase tracking-[0.18em] font-sans transition-all text-gray-400 hover:text-cabernetDark dark:hover:text-roseQuartz border-b-2 border-transparent">
+          03. El Arco Orgánico
         </button>
       </div>
     </div>
 
-    <!-- CONTENEDOR CONCEPTO 1: LA CINTA CINÉTICA -->
+    <!-- PROPUESTA 1: EDITORIAL ARQUITECTÓNICO -->
     <div id="concept-1" class="concept-view block">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <!-- Logo SVG -->
-        <div class="lg:col-span-7 glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden custom-shadow border border-sageGreen/30">
-          <div class="absolute top-4 left-6 text-xs uppercase tracking-[0.2em] text-sageGreen font-sans font-medium" data-i18n="c1Badge">Obra 01 / Inspiración Brâncuși & Calder</div>
-          <div class="my-6 py-6 px-4 bg-white/70 dark:bg-black/40 rounded-2xl border border-gray-100 dark:border-gray-800 flex items-center justify-center min-h-[230px]">
-            <img id="logo-img-1" src="assets/logos/concept1_es_nucleo_fluido.svg" alt="Concepto 1: La Cinta Cinética" class="w-full max-w-[580px] mx-auto filter drop-shadow-sm">
+        <div class="lg:col-span-7 glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden custom-shadow border border-roseGold/40">
+          <div class="absolute top-4 left-6 text-xs uppercase tracking-[0.2em] text-roseGold font-sans font-medium" data-i18n="c1Badge">Propuesta 01 / Alta Costura (Fila 1, Centro)</div>
+          <div class="my-6 py-6 px-4 bg-white/70 dark:bg-black/40 rounded-2xl border border-[#EED8D6] dark:border-[#5C2A2E] flex items-center justify-center min-h-[230px]">
+            <img id="logo-img-1" src="assets/logos/concept1_es_nucleo_fluido.svg" alt="Propuesta 1: Editorial Arquitectónico" class="w-full max-w-[580px] mx-auto filter drop-shadow-sm">
           </div>
           <div class="flex justify-between items-center text-xs text-gray-500 font-sans pt-1">
-            <span data-i18n="c1Lockup">Escultura Espacial de Columna en Extensión</span>
-            <span class="text-sageGreen" data-i18n="lblVectorPrecision">Equilibrio Cinético</span>
+            <span data-i18n="c1Lockup">Monograma y Mayúscula Estilizada</span>
+            <span class="text-roseGold" data-i18n="lblPrestige">Elegancia Editorial</span>
           </div>
         </div>
 
-        <!-- Detalles Concepto 1 -->
+        <!-- Detalles Propuesta 1 -->
         <div class="lg:col-span-5 space-y-6">
           <div>
-            <span class="text-xs uppercase tracking-[0.25em] text-sageGreen font-sans font-semibold" data-i18n="c1Theme">Escultura Cinética • Torsión Tridimensional</span>
-            <h3 class="font-serif text-3xl md:text-4xl text-oceanSlate dark:text-white mt-1" data-i18n="c1Title">La Cinta Cinética</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mt-3" data-i18n="c1Desc">
-              Inspirada en *Bird in Space* de Constantin Brâncuși. Un único trazo continuo esculpido en tres dimensiones que se curva en torsión helicoidal, emulando la columna vertebral en máxima elongación sobre el reformer. Dos esferas flotantes de contrapeso coronan la estructura como un móvil de Alexander Calder.
+            <span class="text-xs uppercase tracking-[0.25em] text-roseGold font-sans font-semibold" data-i18n="c1Theme">Alta Costura • Alargamiento • Prestigio</span>
+            <h3 class="font-serif text-3xl md:text-4xl text-cabernetDark dark:text-roseQuartz mt-1" data-i18n="c1Title">Editorial Arquitectónico</h3>
+            <p class="text-gray-600 dark:text-roseSoft text-sm leading-relaxed mt-3" data-i18n="c1Desc">
+              Directamente inspirada en la opción central superior del tablero. Letras mayúsculas de gran esbeltez y líneas ultra-finas, con travesaño de cintura alta en la 'A' y esferas de diéresis elevadas sobre el asta central. Refleja la elongación de la columna vertebral y el porte de un club boutique exclusivo.
             </p>
           </div>
 
-          <!-- Paleta de Materiales -->
+          <!-- Paleta de Color -->
           <div>
-            <h4 class="text-xs uppercase tracking-[0.2em] font-sans font-semibold text-gray-400 mb-3" data-i18n="lblPalette">Paleta Matérica</h4>
+            <h4 class="text-xs uppercase tracking-[0.2em] font-sans font-semibold text-gray-400 mb-3" data-i18n="lblPalette">Paleta de la Marca</h4>
             <div class="grid grid-cols-4 gap-3">
-              <div class="group cursor-pointer text-center" onclick="copyHex('#151A18')">
-                <div class="h-16 rounded-xl bg-[#151A18] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#151A18</span>
-                <span class="text-[9px] block text-gray-400">Basalto Pátina</span>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#461E22')">
+                <div class="h-16 rounded-xl bg-[#461E22] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#461E22</span>
+                <span class="text-[9px] block text-gray-400">Cabernet</span>
               </div>
-              <div class="group cursor-pointer text-center" onclick="copyHex('#556E63')">
-                <div class="h-16 rounded-xl bg-[#556E63] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#556E63</span>
-                <span class="text-[9px] block text-gray-400">Salvia Oxidado</span>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#F2B8B5')">
+                <div class="h-16 rounded-xl bg-[#F2B8B5] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#F2B8B5</span>
+                <span class="text-[9px] block text-gray-400">Rose Quartz</span>
               </div>
-              <div class="group cursor-pointer text-center" onclick="copyHex('#BE9F73')">
-                <div class="h-16 rounded-xl bg-[#BE9F73] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#BE9F73</span>
-                <span class="text-[9px] block text-gray-400">Bronce Solar</span>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#C98D83')">
+                <div class="h-16 rounded-xl bg-[#C98D83] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#C98D83</span>
+                <span class="text-[9px] block text-gray-400">Oro Rosa</span>
               </div>
-              <div class="group cursor-pointer text-center" onclick="copyHex('#FBFDFC')">
-                <div class="h-16 rounded-xl bg-[#FBFDFC] border border-gray-300 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#FBFDFC</span>
-                <span class="text-[9px] block text-gray-400">Calcita Pura</span>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#FBF8F5')">
+                <div class="h-16 rounded-xl bg-[#FBF8F5] border border-gray-300 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#FBF8F5</span>
+                <span class="text-[9px] block text-gray-400">Alabastro</span>
               </div>
             </div>
           </div>
 
-          <div class="p-4 rounded-xl bg-sageGreen/10 border border-sageGreen/25 text-xs">
-            <strong class="text-sageGreen block mb-1" data-i18n="c1SensationTitle">Aura del Espacio:</strong>
-            <span data-i18n="c1Sensation">Galería de arte cinético, fluidez sin esfuerzo y sofisticación etérea. Conecta con clientes de alto poder adquisitivo que aprecian el diseño escultórico contemporáneo.</span>
+          <div class="p-4 rounded-xl bg-roseQuartz/20 border border-roseGold/30 text-xs">
+            <strong class="text-cabernetDark dark:text-roseQuartz block mb-1" data-i18n="c1SensationTitle">Sensación de la Alumna:</strong>
+            <span data-i18n="c1Sensation">Prestigio de revista de moda, refinamiento visual y pertenencia a un círculo selecto de pilates reformer.</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- CONTENEDOR CONCEPTO 2: EL MONOLITO SUSPENDIDO -->
+    <!-- PROPUESTA 2: LA CINTA ONDULADA -->
     <div id="concept-2" class="concept-view hidden">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <!-- Logo SVG -->
-        <div class="lg:col-span-7 glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden custom-shadow border border-champagneGold/30">
-          <div class="absolute top-4 left-6 text-xs uppercase tracking-[0.2em] text-champagneGold font-sans font-medium" data-i18n="c2Badge">Obra 02 / Minimalismo Brutalista & Judd</div>
-          <div class="my-6 py-6 px-4 bg-white/70 dark:bg-black/40 rounded-2xl border border-gray-100 dark:border-gray-800 flex items-center justify-center min-h-[230px]">
-            <img id="logo-img-2" src="assets/logos/concept2_es_aplomo_arquitectonico.svg" alt="Concepto 2: El Monolito Suspendido" class="w-full max-w-[580px] mx-auto filter drop-shadow-sm">
+        <div class="lg:col-span-7 glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden custom-shadow border border-roseGold/40">
+          <div class="absolute top-4 left-6 text-xs uppercase tracking-[0.2em] text-roseGold font-sans font-medium" data-i18n="c2Badge">Propuesta 02 / Cinta Fluida (Fila 3, Izquierda)</div>
+          <div class="my-6 py-6 px-4 bg-white/70 dark:bg-black/40 rounded-2xl border border-[#EED8D6] dark:border-[#5C2A2E] flex items-center justify-center min-h-[230px]">
+            <img id="logo-img-2" src="assets/logos/concept2_es_aplomo_arquitectonico.svg" alt="Propuesta 2: La Cinta Ondulada" class="w-full max-w-[580px] mx-auto filter drop-shadow-sm">
           </div>
           <div class="flex justify-between items-center text-xs text-gray-500 font-sans pt-1">
-            <span data-i18n="c2Lockup">Monolito Arquitectónico y Esferas de Diéresis</span>
-            <span class="text-champagneGold" data-i18n="lblEditorialPrecision">Tensión Gravitacional</span>
+            <span data-i18n="c2Lockup">Bases Onduladas y Movimiento Helicoidal</span>
+            <span class="text-roseGold" data-i18n="lblFluidity">Fluidez Cinética</span>
           </div>
         </div>
 
-        <!-- Detalles Concepto 2 -->
+        <!-- Detalles Propuesta 2 -->
         <div class="lg:col-span-5 space-y-6">
           <div>
-            <span class="text-xs uppercase tracking-[0.25em] text-champagneGold font-sans font-semibold" data-i18n="c2Theme">Brutalismo Minimalista • Tensión & Vacío</span>
-            <h3 class="font-serif text-3xl md:text-4xl text-oceanSlate dark:text-white mt-1" data-i18n="c2Title">El Monolito Suspendido</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mt-3" data-i18n="c2Desc">
-              Inspirado en las instalaciones de Donald Judd y Charlotte Perriand. Dos pilares monolíticos en obsidiana separados por un vacío de tensión geométrica milimétrica. La diéresis (`¨`) levita en el plano superior como esferas astronómicas en equilibrio de contrapeso.
+            <span class="text-xs uppercase tracking-[0.25em] text-roseGold font-sans font-semibold" data-i18n="c2Theme">Escultórico • Ondulado • Dinamismo</span>
+            <h3 class="font-serif text-3xl md:text-4xl text-cabernetDark dark:text-roseQuartz mt-1" data-i18n="c2Title">La Cinta Ondulada</h3>
+            <p class="text-gray-600 dark:text-roseSoft text-sm leading-relaxed mt-3" data-i18n="c2Desc">
+              Inspirada en el cuadrante inferior izquierdo del tablero. Las letras mayúsculas se asientan sobre bases fluidas que ondulan como olas de agua pura (*Náyades*), entrelazando la diagonal de la 'N' y los lazos de la 'A' con la ligereza de las cintas del reformer.
             </p>
           </div>
 
-          <!-- Paleta de Materiales -->
+          <!-- Paleta de Color -->
           <div>
-            <h4 class="text-xs uppercase tracking-[0.2em] font-sans font-semibold text-gray-400 mb-3" data-i18n="lblPalette">Paleta Matérica</h4>
+            <h4 class="text-xs uppercase tracking-[0.2em] font-sans font-semibold text-gray-400 mb-3" data-i18n="lblPalette">Paleta de la Marca</h4>
             <div class="grid grid-cols-4 gap-3">
-              <div class="group cursor-pointer text-center" onclick="copyHex('#1A1614')">
-                <div class="h-16 rounded-xl bg-[#1A1614] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#1A1614</span>
-                <span class="text-[9px] block text-gray-400">Obsidiana</span>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#522428')">
+                <div class="h-16 rounded-xl bg-[#522428] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#522428</span>
+                <span class="text-[9px] block text-gray-400">Terracota Vino</span>
               </div>
-              <div class="group cursor-pointer text-center" onclick="copyHex('#C5A47C')">
-                <div class="h-16 rounded-xl bg-[#C5A47C] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#C5A47C</span>
-                <span class="text-[9px] block text-gray-400">Champagne</span>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#F0B3B0')">
+                <div class="h-16 rounded-xl bg-[#F0B3B0] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#F0B3B0</span>
+                <span class="text-[9px] block text-gray-400">Cuarzo Rosa</span>
               </div>
-              <div class="group cursor-pointer text-center" onclick="copyHex('#7D736C')">
-                <div class="h-16 rounded-xl bg-[#7D736C] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#7D736C</span>
-                <span class="text-[9px] block text-gray-400">Sombra Mica</span>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#C88C82')">
+                <div class="h-16 rounded-xl bg-[#C88C82] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#C88C82</span>
+                <span class="text-[9px] block text-gray-400">Bronce Rosado</span>
+              </div>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#FAF6F2')">
+                <div class="h-16 rounded-xl bg-[#FAF6F2] border border-gray-300 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#FAF6F2</span>
+                <span class="text-[9px] block text-gray-400">Calcita</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-roseQuartz/20 border border-roseGold/30 text-xs">
+            <strong class="text-cabernetDark dark:text-roseQuartz block mb-1" data-i18n="c2SensationTitle">Sensación de la Alumna:</strong>
+            <span data-i18n="c2Sensation">Movimiento armónico, ligereza corporal y transición fluida entre resistencia y relajación.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROPUESTA 3: EL ARCO ORGÁNICO -->
+    <div id="concept-3" class="concept-view hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Logo SVG -->
+        <div class="lg:col-span-7 glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden custom-shadow border border-roseGold/40">
+          <div class="absolute top-4 left-6 text-xs uppercase tracking-[0.2em] text-roseGold font-sans font-medium" data-i18n="c3Badge">Propuesta 03 / Minúscula Orgánica (Fila 1, Izquierda)</div>
+          <div class="my-6 py-6 px-4 bg-white/70 dark:bg-black/40 rounded-2xl border border-[#EED8D6] dark:border-[#5C2A2E] flex items-center justify-center min-h-[230px]">
+            <img id="logo-img-3" src="assets/logos/concept3_es_radiancia_vital.svg" alt="Propuesta 3: El Arco Orgánico" class="w-full max-w-[580px] mx-auto filter drop-shadow-sm">
+          </div>
+          <div class="flex justify-between items-center text-xs text-gray-500 font-sans pt-1">
+            <span data-i18n="c3Lockup">Tipografía Minúscula Cálida y Arco Continuo</span>
+            <span class="text-roseGold" data-i18n="lblWarmth">Cercanía y Bienestar</span>
+          </div>
+        </div>
+
+        <!-- Detalles Propuesta 3 -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs uppercase tracking-[0.25em] text-roseGold font-sans font-semibold" data-i18n="c3Theme">Orgánico • Acogedor • Santuario Táctil</span>
+            <h3 class="font-serif text-3xl md:text-4xl text-cabernetDark dark:text-roseQuartz mt-1" data-i18n="c3Title">El Arco Orgánico</h3>
+            <p class="text-gray-600 dark:text-roseSoft text-sm leading-relaxed mt-3" data-i18n="c3Desc">
+              Inspirada en la versión en minúscula de la esquina superior izquierda. Sus trazos curvos y amables generan una sensación de hospitalidad táctil y bienestar accesible, combinando arcos continuos con cuencos circulares perfectos y la diéresis gemela.
+            </p>
+          </div>
+
+          <!-- Paleta de Color -->
+          <div>
+            <h4 class="text-xs uppercase tracking-[0.2em] font-sans font-semibold text-gray-400 mb-3" data-i18n="lblPalette">Paleta de la Marca</h4>
+            <div class="grid grid-cols-4 gap-3">
+              <div class="group cursor-pointer text-center" onclick="copyHex('#4E2025')">
+                <div class="h-16 rounded-xl bg-[#4E2025] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#4E2025</span>
+                <span class="text-[9px] block text-gray-400">Borgoña</span>
+              </div>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#F5BFBC')">
+                <div class="h-16 rounded-xl bg-[#F5BFBC] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#F5BFBC</span>
+                <span class="text-[9px] block text-gray-400">Rosa Polvo</span>
+              </div>
+              <div class="group cursor-pointer text-center" onclick="copyHex('#783E43')">
+                <div class="h-16 rounded-xl bg-[#783E43] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
+                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#783E43</span>
+                <span class="text-[9px] block text-gray-400">Sombra Uva</span>
               </div>
               <div class="group cursor-pointer text-center" onclick="copyHex('#FAF7F2')">
                 <div class="h-16 rounded-xl bg-[#FAF7F2] border border-gray-300 shadow-sm transition-transform group-hover:scale-105"></div>
                 <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#FAF7F2</span>
-                <span class="text-[9px] block text-gray-400">Travertino</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-4 rounded-xl bg-champagneGold/10 border border-champagneGold/25 text-xs">
-            <strong class="text-champagneGold block mb-1" data-i18n="c2SensationTitle">Aura del Espacio:</strong>
-            <span data-i18n="c2Sensation">Poder silencioso, disciplina arquitectónica y distinción europea. Posiciona al estudio en la cima del mercado boutique para cobrar $45+ USD por sesión.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONTENEDOR CONCEPTO 3: EL DIAFRAGMA BIOMÓRFICO -->
-    <div id="concept-3" class="concept-view hidden">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        <!-- Logo SVG -->
-        <div class="lg:col-span-7 glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden custom-shadow border border-terracotta/30">
-          <div class="absolute top-4 left-6 text-xs uppercase tracking-[0.2em] text-terracotta font-sans font-medium" data-i18n="c3Badge">Obra 03 / Morfogénesis Arp & Noguchi</div>
-          <div class="my-6 py-6 px-4 bg-white/70 dark:bg-black/40 rounded-2xl border border-gray-100 dark:border-gray-800 flex items-center justify-center min-h-[230px]">
-            <img id="logo-img-3" src="assets/logos/concept3_es_radiancia_vital.svg" alt="Concepto 3: El Diafragma Biomórfico" class="w-full max-w-[580px] mx-auto filter drop-shadow-sm">
-          </div>
-          <div class="flex justify-between items-center text-xs text-gray-500 font-sans pt-1">
-            <span data-i18n="c3Lockup">Relieve Biomórfico de Expansión Pulmonar</span>
-            <span class="text-terracotta" data-i18n="lblVitality">Morfogénesis Orgánica</span>
-          </div>
-        </div>
-
-        <!-- Detalles Concepto 3 -->
-        <div class="lg:col-span-5 space-y-6">
-          <div>
-            <span class="text-xs uppercase tracking-[0.25em] text-terracotta font-sans font-semibold" data-i18n="c3Theme">Biomórfico • Escultura de Tierra • Respiración</span>
-            <h3 class="font-serif text-3xl md:text-4xl text-oceanSlate dark:text-white mt-1" data-i18n="c3Title">El Diafragma Biomórfico</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mt-3" data-i18n="c3Desc">
-              Inspirado en los relieves biomórficos de Jean Arp y las piedras grabadas de Isamu Noguchi. Una vasija orgánica asimétrica que respira con la caja torácica. En su interior, la 'N' se fusiona con costillas de respiración sgraffito y dos cantos rodados suspendidos.
-            </p>
-          </div>
-
-          <!-- Paleta de Materiales -->
-          <div>
-            <h4 class="text-xs uppercase tracking-[0.2em] font-sans font-semibold text-gray-400 mb-3" data-i18n="lblPalette">Paleta Matérica</h4>
-            <div class="grid grid-cols-4 gap-3">
-              <div class="group cursor-pointer text-center" onclick="copyHex('#934331')">
-                <div class="h-16 rounded-xl bg-[#934331] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#934331</span>
-                <span class="text-[9px] block text-gray-400">Terracota Sgraffito</span>
-              </div>
-              <div class="group cursor-pointer text-center" onclick="copyHex('#CF854E')">
-                <div class="h-16 rounded-xl bg-[#CF854E] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#CF854E</span>
-                <span class="text-[9px] block text-gray-400">Duna Solar</span>
-              </div>
-              <div class="group cursor-pointer text-center" onclick="copyHex('#55604C')">
-                <div class="h-16 rounded-xl bg-[#55604C] border border-white/20 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#55604C</span>
-                <span class="text-[9px] block text-gray-400">Olivo Fósil</span>
-              </div>
-              <div class="group cursor-pointer text-center" onclick="copyHex('#FAF8F3')">
-                <div class="h-16 rounded-xl bg-[#FAF8F3] border border-gray-300 shadow-sm transition-transform group-hover:scale-105"></div>
-                <span class="text-[10px] block mt-1.5 font-mono text-gray-500">#FAF8F3</span>
                 <span class="text-[9px] block text-gray-400">Lino Crudo</span>
               </div>
             </div>
           </div>
 
-          <div class="p-4 rounded-xl bg-terracotta/10 border border-terracotta/25 text-xs">
-            <strong class="text-terracotta block mb-1" data-i18n="c3SensationTitle">Aura del Espacio:</strong>
-            <span data-i18n="c3Sensation">Retiro orgánico mediterráneo, conexión visceral con la tierra y bienestar holístico. Ideal para un estudio que busca una identidad cálida pero rotundamente artística.</span>
+          <div class="p-4 rounded-xl bg-roseQuartz/20 border border-roseGold/30 text-xs">
+            <strong class="text-cabernetDark dark:text-roseQuartz block mb-1" data-i18n="c3SensationTitle">Sensación de la Alumna:</strong>
+            <span data-i18n="c3Sensation">Cálida bienvenida, autocuidado consciente, espacio íntimo libre de pretensiones intimidantes.</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN: EL SANTUARIO GALERÍA (MOCKUPS VANGUARDISTAS) -->
+  <!-- SECCIÓN: EL SANTUARIO EN ACCIÓN (MOCKUPS EN CABERNET & ROSE) -->
   <section id="experiencia" class="max-w-7xl mx-auto px-6 py-14">
     <div class="text-center mb-12">
-      <span class="text-xs uppercase tracking-[0.3em] text-champagneGold font-sans font-semibold" data-i18n="galleryBadge">Inmersión Arquitectónica</span>
-      <h2 class="font-serif text-4xl md:text-5xl text-oceanSlate dark:text-white mt-2" data-i18n="galleryTitle">El Estudio como Obra Espacial</h2>
-      <p class="text-gray-500 dark:text-gray-400 text-sm mt-2 max-w-xl mx-auto" data-i18n="gallerySubtitle">
-        El diseño no termina en el archivo vectorial. Observa cómo Naïa cobra vida en un espacio donde los reformers son esculturas de travertino y los objetos dialogan con el arte.
+      <span class="text-xs uppercase tracking-[0.3em] text-roseGold font-sans font-semibold" data-i18n="galleryBadge">Presencia Real en el Estudio</span>
+      <h2 class="font-serif text-4xl md:text-5xl text-cabernetDark dark:text-roseQuartz mt-2" data-i18n="galleryTitle">El Estudio en la Vida Real</h2>
+      <p class="text-gray-600 dark:text-roseSoft text-sm mt-2 max-w-xl mx-auto" data-i18n="gallerySubtitle">
+        Comprueba la armonía entre la fachada en borgoña y los objetos de bienestar en rosa cuarzo.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Mockup 1: Estudio Galería Avant-Garde (NUEVO) -->
+      <!-- Mockup 1: Fachada Cabernet & Rosa -->
       <div class="glass-card rounded-3xl overflow-hidden group custom-shadow">
         <div class="relative overflow-hidden aspect-video bg-gray-100">
-          <img src="assets/mockups/avant_garde_studio.jpg" alt="Estudio Vanguardista con Reformers de Travertino" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <img src="assets/mockups/naia_cabernet_facade.jpg" alt="Fachada en Borgoña y Vidrio Esmerilado" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
           <div class="absolute bottom-4 left-6 text-white">
-            <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-champagneGold block" data-i18n="m1Cat">Santuario Galería</span>
-            <h4 class="font-serif text-xl" data-i18n="m1Title">Reformers de Travertino Esculpido & Lámpara Noguchi</h4>
+            <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-roseQuartz block" data-i18n="m1Cat">Fachada Exterior</span>
+            <h4 class="font-serif text-xl" data-i18n="m1Title">Moldura Borgoña y Tipografía Rosa Palo</h4>
           </div>
         </div>
-        <div class="p-6 text-xs text-gray-600 dark:text-gray-300 leading-relaxed" data-i18n="m1Desc">
-          Plataformas de reformer en piedra de travertino rústico tallada a mano, iluminación escultórica de papel de arroz Isamu Noguchi y relieve mural corpóreo de bronce fundido.
+        <div class="p-6 text-xs text-gray-700 dark:text-roseSoft leading-relaxed" data-i18n="m1Desc">
+          Fachada en tono cabernet profundo con rotulación en vidrio esmerilado que deja ver la luz cálida interior y las máquinas de reformer con tapizados en rosa suave.
         </div>
       </div>
 
-      <!-- Mockup 2: Objetos de Colección Avant-Garde (NUEVO) -->
+      <!-- Mockup 2: Merchandising Cabernet & Rosa -->
       <div class="glass-card rounded-3xl overflow-hidden group custom-shadow">
         <div class="relative overflow-hidden aspect-video bg-gray-100">
-          <img src="assets/mockups/avant_garde_merch.jpg" alt="Objetos de diseño y merchandising de arte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <img src="assets/mockups/naia_cabernet_merch.jpg" alt="Calcetines de Agarre y Toalla Cabernet" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
           <div class="absolute bottom-4 left-6 text-white">
-            <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-sageGreen block" data-i18n="m2Cat">Objetos de Colección Retail</span>
-            <h4 class="font-serif text-xl" data-i18n="m2Title">Vasija Cerámica Negra & Toalla de Lino Puro</h4>
+            <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-roseQuartz block" data-i18n="m2Cat">Merchandising Exclusivo</span>
+            <h4 class="font-serif text-xl" data-i18n="m2Title">Calcetines Rosa Cuarzo y Toalla Borgoña</h4>
           </div>
         </div>
-        <div class="p-6 text-xs text-gray-600 dark:text-gray-300 leading-relaxed" data-i18n="m2Desc">
-          Frasco escultórico en cerámica negra mate con bajo relieve 'NAÏA', toalla de reformer de lino en panal con broche de piel natural, calcetines de tricot estriado y catálogo de exposición.
+        <div class="p-6 text-xs text-gray-700 dark:text-roseSoft leading-relaxed" data-i18n="m2Desc">
+          Calcetines con puntos antideslizantes de silicona vino, toalla de nido de abeja con broche de piel y tarjeta de cita con el lema: <em>"A stronger, calmer, happier you"</em>.
         </div>
       </div>
 
-      <!-- Mockup 3: Fachada Arquitectónica -->
+      <!-- Mockup 3: Interior con Reformers -->
       <div class="glass-card rounded-3xl overflow-hidden group custom-shadow">
         <div class="relative overflow-hidden aspect-video bg-gray-100">
-          <img src="assets/mockups/studio_facade.jpg" alt="Fachada del estudio Naïa Pilates" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <img src="assets/mockups/studio_interior.jpg" alt="Interior con Reformers de Roble" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
           <div class="absolute bottom-4 left-6 text-white">
-            <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-champagneGold block" data-i18n="m3Cat">Presencia Urbana</span>
-            <h4 class="font-serif text-xl" data-i18n="m3Title">Vidrio Esmerilado & Pan de Oro en Fachada</h4>
+            <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-roseQuartz block" data-i18n="m3Cat">Atmósfera Interior</span>
+            <h4 class="font-serif text-xl" data-i18n="m3Title">Reformers de Madera y Pared Principal</h4>
           </div>
         </div>
-        <div class="p-6 text-xs text-gray-600 dark:text-gray-300 leading-relaxed" data-i18n="m3Desc">
-          Rotulación en vidrio translúcido con pan de oro de 22k que filtra la intimidad del reformer hacia el exterior y proyecta el resplandor cálido del interior hacia la calle.
+        <div class="p-6 text-xs text-gray-700 dark:text-roseSoft leading-relaxed" data-i18n="m3Desc">
+          Luz natural filtrada por cortinajes de lino y rótulo corpóreo en bronce cálido sobre pared de revoco de cal.
         </div>
       </div>
 
       <!-- Mockup 4: Papelería Editorial -->
       <div class="glass-card rounded-3xl overflow-hidden group custom-shadow">
         <div class="relative overflow-hidden aspect-video bg-gray-100">
-          <img src="assets/mockups/stationery_brandkit.jpg" alt="Papelería editorial y kit de bienvenida" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <img src="assets/mockups/stationery_brandkit.jpg" alt="Papelería y Kit de Bienvenida" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
           <div class="absolute bottom-4 left-6 text-white">
-            <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-terracotta block" data-i18n="m4Cat">Protocolo de Bienvenida</span>
-            <h4 class="font-serif text-xl" data-i18n="m4Title">Papel de Algodón, Grabado en Seco & Lacre</h4>
+            <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-roseQuartz block" data-i18n="m4Cat">Protocolo de Bienvenida</span>
+            <h4 class="font-serif text-xl" data-i18n="m4Title">Carpeta de Bienvenida y Grabado en Seco</h4>
           </div>
         </div>
-        <div class="p-6 text-xs text-gray-600 dark:text-gray-300 leading-relaxed" data-i18n="m4Desc">
-          Papel de algodón texturizado de 600g con bajo relieve ciego, sellos de lacre mineral, tarjetas de cita y carpeta editorial de bienvenida para el nuevo miembro.
+        <div class="p-6 text-xs text-gray-700 dark:text-roseSoft leading-relaxed" data-i18n="m4Desc">
+          Papel de algodón texturizado con bajo relieve ciego, tarjetas de citas y formulario de exoneración médica para la primera clase.
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN COMPARATIVA: LOGO VS. ATELIER COMPLETO -->
+  <!-- SECCIÓN COMPARATIVA: LOGO VS. SISTEMA DE MARCA -->
   <section id="comparativa" class="max-w-6xl mx-auto px-6 py-14">
-    <div class="glass-card rounded-3xl p-8 md:p-14 custom-shadow sculptural-glow">
+    <div class="glass-card rounded-3xl p-8 md:p-14 custom-shadow rose-glow">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs uppercase tracking-[0.3em] text-terracotta font-sans font-semibold" data-i18n="compBadge">La Decisión de Negocio</span>
-        <h2 class="font-serif text-3xl md:text-5xl text-oceanSlate dark:text-white mt-2" data-i18n="compTitle">¿Un Logo Aislado o un Atelier de Marca?</h2>
-        <p class="text-gray-600 dark:text-gray-300 text-sm mt-3" data-i18n="compSubtitle">
-          Un logo suelto es una imagen en una carpeta. Un <strong>Atelier de Identidad</strong> es la coherencia absoluta que convierte tu estudio en un destino de culto estético con lista de espera.
+        <span class="text-xs uppercase tracking-[0.3em] text-roseGold font-sans font-semibold" data-i18n="compBadge">La Estrategia de Crecimiento</span>
+        <h2 class="font-serif text-3xl md:text-5xl text-cabernetDark dark:text-roseQuartz mt-2" data-i18n="compTitle">¿Solo un Logotipo o la Experiencia Completa?</h2>
+        <p class="text-gray-600 dark:text-roseSoft text-sm mt-3" data-i18n="compSubtitle">
+          Un logo aislado es un archivo en una computadora. Un <strong>Sistema de Identidad Boutique</strong> es lo que te permite llenar tus clases cobrando $38 a $45 USD por sesión y fidelizar miembros a $260 USD al mes.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Opción A: Solo Logo -->
-        <div class="p-8 rounded-2xl border border-gray-300 dark:border-gray-700 bg-gray-50/50 dark:bg-black/20 flex flex-col justify-between">
+        <div class="p-8 rounded-2xl border border-[#EED8D6] dark:border-[#5C2A2E] bg-white/50 dark:bg-black/20 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="text-xs uppercase tracking-[0.2em] font-sans text-gray-400" data-i18n="lblBasicApproach">Enfoque Estándar</span>
-              <span class="px-2.5 py-1 rounded bg-gray-200 dark:bg-gray-800 text-[10px] font-sans uppercase" data-i18n="lblLogoOnly">Solo el Archivo</span>
+              <span class="text-xs uppercase tracking-[0.2em] font-sans text-gray-400" data-i18n="lblBasicApproach">Enfoque Básico</span>
+              <span class="px-2.5 py-1 rounded bg-[#EED8D6] dark:bg-[#5C2A2E] text-[10px] font-sans uppercase text-cabernetDark dark:text-roseQuartz" data-i18n="lblLogoOnly">Solo el Vector</span>
             </div>
-            <h3 class="font-serif text-2xl text-gray-700 dark:text-gray-300 mb-4" data-i18n="logoOnlyTitle">El Archivo Desconectado</h3>
-            <ul class="space-y-3 text-xs text-gray-500 dark:text-gray-400">
+            <h3 class="font-serif text-2xl text-cabernetDark dark:text-roseSoft mb-4" data-i18n="logoOnlyTitle">El Archivo Aislado</h3>
+            <ul class="space-y-3 text-xs text-gray-600 dark:text-gray-300">
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span data-i18n="lo1">Recibes el vector, pero ningún proveedor sabrá cómo replicar los acabados ni las tipografías.</span>
+                <span data-i18n="lo1">Recibes el archivo gráfico, pero sin especificaciones de color exacto para rotulación ni tipografías.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span data-i18n="lo2">El rotulista improvisa fuentes baratas en la vitrina, arruinando la fachada vanguardista.</span>
+                <span data-i18n="lo2">Tu rotulista inventa fuentes en la fachada, arruinando la elegancia de la entrada.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span data-i18n="lo3">Tus calcetines y toallas se compran genéricos sin diseño, perdiendo más de $15,000 USD anuales en ventas retail.</span>
+                <span data-i18n="lo3">Tus calcetines y toallas se compran genéricos sin marca, perdiendo miles de dólares en ingresos retail.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span data-i18n="lo4">Tus redes sociales lucen como un gimnasio común de barrio, perdiendo el estatus de club boutique.</span>
+                <span data-i18n="lo4">Tus redes sociales lucen como un gimnasio común de barrio con tipografías inconsistentes.</span>
               </li>
             </ul>
           </div>
-          <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800 text-center">
+          <div class="mt-8 pt-4 border-t border-[#EED8D6] dark:border-[#5C2A2E] text-center">
             <span class="text-xs text-gray-400 uppercase tracking-wider block" data-i18n="lblInvestment">Inversión</span>
-            <span class="font-serif text-3xl font-normal text-gray-600 dark:text-gray-300">$850 USD</span>
+            <span class="font-serif text-3xl font-normal text-cabernetDark dark:text-roseQuartz">$850 USD</span>
           </div>
         </div>
 
-        <!-- Opción B: Sistema de Identidad Completo -->
-        <div class="p-8 rounded-2xl border-2 border-champagneGold bg-white dark:bg-[#1C1F22] relative flex flex-col justify-between shadow-2xl">
-          <div class="absolute -top-3.5 right-6 px-3 py-1 rounded-full bg-champagneGold text-[#1A1615] text-[10px] font-sans uppercase tracking-[0.2em] font-bold" data-i18n="lblBestValue">
-            Recomendado para Apertura de Prestigio
+        <!-- Opción B: Sistema Boutique Completo -->
+        <div class="p-8 rounded-2xl border-2 border-roseGold bg-white dark:bg-[#2C1417] relative flex flex-col justify-between shadow-2xl">
+          <div class="absolute -top-3.5 right-6 px-3 py-1 rounded-full bg-roseGold text-white text-[10px] font-sans uppercase tracking-[0.2em] font-bold" data-i18n="lblBestValue">
+            Recomendado para Apertura
           </div>
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="text-xs uppercase tracking-[0.2em] font-sans text-champagneGold font-semibold" data-i18n="lblFullSystem">El Atelier Integral</span>
-              <span class="px-2.5 py-1 rounded bg-champagneGold/20 text-champagneGold text-[10px] font-sans uppercase font-medium" data-i18n="lblStudioKit">Kit Boutique</span>
+              <span class="text-xs uppercase tracking-[0.2em] font-sans text-roseGold font-semibold" data-i18n="lblFullSystem">El Sistema Integral</span>
+              <span class="px-2.5 py-1 rounded bg-roseGold/20 text-cabernetDark dark:text-roseQuartz text-[10px] font-sans uppercase font-medium" data-i18n="lblStudioKit">Kit Boutique</span>
             </div>
-            <h3 class="font-serif text-2xl text-oceanSlate dark:text-white mb-4" data-i18n="systemTitle">Santuario de Marca Llave en Mano</h3>
-            <ul class="space-y-3 text-xs text-gray-600 dark:text-gray-200">
+            <h3 class="font-serif text-2xl text-cabernetDark dark:text-roseQuartz mb-4" data-i18n="systemTitle">Santuario de Estudio Llave en Mano</h3>
+            <ul class="space-y-3 text-xs text-gray-700 dark:text-roseSoft">
               <li class="flex items-start gap-2">
                 <span class="text-green-600 dark:text-green-400 font-bold">✓</span>
-                <span data-i18n="sy1"><strong>Manual Escultórico de 24 Páginas:</strong> Pautas de materialidad, iluminación 2700K y jerarquía de fuentes.</span>
+                <span data-i18n="sy1"><strong>Manual de Marca Completo (24 Págs.):</strong> Códigos de color Cabernet & Blush, fuentes licenciadas y reglas de resguardo.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-green-600 dark:text-green-400 font-bold">✓</span>
-                <span data-i18n="sy2"><strong>Matrices de Merchandising Exclusivo:</strong> Arte vectorial listo para fábrica de calcetines estriados y toallas.</span>
+                <span data-i18n="sy2"><strong>Matrices de Merchandising Exclusivo:</strong> Arte vectorial para calcetines de agarre de silicona y toallas de reformer.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-green-600 dark:text-green-400 font-bold">✓</span>
-                <span data-i18n="sy3"><strong>Kit Editorial de Redes (12 Plantillas Canva):</strong> Diseños con estética de revista de arte para tus clases y horarios.</span>
+                <span data-i18n="sy3"><strong>Kit Editorial de Redes (12 Plantillas Canva):</strong> Diseños listos para editar y publicar horarios, instructores y precios.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-green-600 dark:text-green-400 font-bold">✓</span>
-                <span data-i18n="sy4"><strong>Papelería y Exoneración de Alta Gama:</strong> Tarjetas con relieve y formulario de bienvenida listo para imprenta.</span>
+                <span data-i18n="sy4"><strong>Papelería y Tarjetas de Cita:</strong> Diseños con el lema *"A stronger, calmer, happier you"* listos para imprenta.</span>
               </li>
             </ul>
           </div>
-          <div class="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800 text-center">
-            <span class="text-xs text-champagneGold uppercase tracking-wider block font-semibold" data-i18n="lblInvestment">Inversión</span>
-            <span class="font-serif text-3xl font-normal text-oceanSlate dark:text-white">$2,400 USD</span>
+          <div class="mt-8 pt-4 border-t border-roseGold/30 text-center">
+            <span class="text-xs text-roseGold uppercase tracking-wider block font-semibold" data-i18n="lblInvestment">Inversión</span>
+            <span class="font-serif text-3xl font-normal text-cabernetDark dark:text-roseQuartz">$2,400 USD</span>
             <span class="text-[11px] text-gray-400 block mt-1" data-i18n="lblTwoPayments">o 2 cuotas de $1,200 USD</span>
           </div>
         </div>
@@ -514,86 +523,86 @@
   <!-- SECCIÓN DE PAQUETES Y PRECIOS -->
   <section id="precios" class="max-w-7xl mx-auto px-6 py-14">
     <div class="text-center mb-12">
-      <span class="text-xs uppercase tracking-[0.3em] text-champagneGold font-sans font-semibold" data-i18n="pricingBadge">Estructura de Inversión</span>
-      <h2 class="font-serif text-4xl md:text-5xl text-oceanSlate dark:text-white mt-2" data-i18n="pricingTitle">Paquetes de Lanzamiento</h2>
-      <p class="text-gray-500 dark:text-gray-400 text-sm mt-2 max-w-xl mx-auto" data-i18n="pricingSubtitle">
-        Comienza con la firma visual o despliega el atelier completo. Puedes acreditar el 100% del Nivel 1 a cualquiera de los kits en los primeros 7 días.
+      <span class="text-xs uppercase tracking-[0.3em] text-roseGold font-sans font-semibold" data-i18n="pricingBadge">Opciones de Inversión</span>
+      <h2 class="font-serif text-4xl md:text-5xl text-cabernetDark dark:text-roseQuartz mt-2" data-i18n="pricingTitle">Paquetes para Naïa Pilates Studio</h2>
+      <p class="text-gray-600 dark:text-roseSoft text-sm mt-2 max-w-xl mx-auto" data-i18n="pricingSubtitle">
+        Comienza con la suite de logotipos o asegura el kit completo. Puedes acreditar el 100% del Nivel 1 a cualquiera de los kits en los primeros 7 días.
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
       <!-- Nivel 1 -->
-      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border border-gray-200 dark:border-gray-800 hover:border-gray-400 transition-colors">
+      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border border-[#EED8D6] dark:border-[#5C2A2E] hover:border-roseGold transition-colors">
         <div>
           <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-gray-400 block">Nivel 01</span>
-          <h3 class="font-serif text-2xl text-oceanSlate dark:text-white mt-1" data-i18n="t1Title">Suite de Logo Escultórico</h3>
-          <p class="text-xs text-gray-500 mt-2" data-i18n="t1Desc">La firma gráfica de vanguardia lista para registro y marcas básicas.</p>
+          <h3 class="font-serif text-2xl text-cabernetDark dark:text-roseQuartz mt-1" data-i18n="t1Title">Suite de Logo Esencial</h3>
+          <p class="text-xs text-gray-500 mt-2" data-i18n="t1Desc">La firma gráfica indispensable lista para registro de marca y usos básicos.</p>
           <div class="my-6">
-            <span class="font-serif text-4xl text-oceanSlate dark:text-white">$850</span>
+            <span class="font-serif text-4xl text-cabernetDark dark:text-roseQuartz">$850</span>
             <span class="text-xs text-gray-400"> USD</span>
           </div>
           <ul class="space-y-3 text-xs text-gray-600 dark:text-gray-300">
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t1f1">Logotipo Principal Vectorial</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t1f2">Logotipo Secundario / Apilado</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t1f3">Submarca y Favicon para Web</span></li>
-            <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t1f4">Paleta de Color Matérica (HEX/RGB)</span></li>
+            <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t1f4">Paleta de Color Cabernet & Blush</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t1f5">Exportación Vectorial (.SVG, .PNG, .PDF)</span></li>
           </ul>
         </div>
-        <button onclick="selectPackage('Nivel 1: Suite de Logo Escultórico', '$850 USD')" class="w-full mt-8 py-3 rounded-full border border-oceanSlate dark:border-gray-500 text-oceanSlate dark:text-white text-xs uppercase tracking-wider hover:bg-oceanSlate hover:text-white transition-colors" data-i18n="btnSelectT1">
+        <button onclick="selectPackage('Nivel 1: Suite de Logo Esencial', '$850 USD')" class="w-full mt-8 py-3 rounded-full border border-cabernetDark dark:border-roseGold text-cabernetDark dark:text-roseQuartz text-xs uppercase tracking-wider hover:bg-cabernetDark hover:text-white transition-colors" data-i18n="btnSelectT1">
           Elegir Nivel 1
         </button>
       </div>
 
       <!-- Nivel 2 (Destacado) -->
-      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border-2 border-champagneGold relative shadow-2xl bg-white/95 dark:bg-[#1E2124]">
-        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-champagneGold text-[#1A1615] text-[10px] font-sans uppercase tracking-[0.2em] font-bold" data-i18n="t2Badge">
-          Más Elegido • Máximo Prestigio
+      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border-2 border-roseGold relative shadow-2xl bg-white/95 dark:bg-[#2C1417]">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-roseGold text-white text-[10px] font-sans uppercase tracking-[0.2em] font-bold" data-i18n="t2Badge">
+          Más Elegido • Máximo Retorno
         </div>
         <div>
-          <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-champagneGold block">Nivel 02</span>
-          <h3 class="font-serif text-2xl text-oceanSlate dark:text-white mt-1" data-i18n="t2Title">Sistema de Identidad Boutique</h3>
-          <p class="text-xs text-gray-500 mt-2" data-i18n="t2Desc">El kit recomendado para inaugurar un estudio con presencia editorial desde el primer día.</p>
+          <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-roseGold block">Nivel 02</span>
+          <h3 class="font-serif text-2xl text-cabernetDark dark:text-roseQuartz mt-1" data-i18n="t2Title">Sistema de Identidad Boutique</h3>
+          <p class="text-xs text-gray-500 mt-2" data-i18n="t2Desc">El kit recomendado para inaugurar un estudio con presencia premium desde el día 1.</p>
           <div class="my-6">
-            <span class="font-serif text-4xl text-oceanSlate dark:text-white">$2,400</span>
+            <span class="font-serif text-4xl text-cabernetDark dark:text-roseQuartz">$2,400</span>
             <span class="text-xs text-gray-400"> USD (o 2 × $1,200)</span>
           </div>
-          <ul class="space-y-3 text-xs text-gray-600 dark:text-gray-300">
-            <li class="flex items-center gap-2 font-medium text-oceanSlate dark:text-white"><span>✓</span> <strong>Todo lo del Nivel 1</strong></li>
-            <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t2f1">Manual de Identidad y Materialidad (24 Págs.)</span></li>
+          <ul class="space-y-3 text-xs text-gray-700 dark:text-roseSoft">
+            <li class="flex items-center gap-2 font-medium text-cabernetDark dark:text-white"><span>✓</span> <strong>Todo lo del Nivel 1</strong></li>
+            <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t2f1">Manual de Identidad de Marca (24 Págs.)</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t2f2">Tipografías Licenciadas y Jerarquía</span></li>
-            <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t2f3">Tarjetas de Citas y Horario de Clases</span></li>
+            <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t2f3">Tarjetas de Citas y Horarios con Lema</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t2f4">Kit de Redes Sociales (12 Plantillas Canva)</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t2f5">Vectores para Calcetines y Toalla Reformer</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t2f6">Hoja de Exoneración y Bono de Regalo</span></li>
           </ul>
         </div>
-        <button onclick="selectPackage('Nivel 2: Sistema de Identidad Boutique', '$2,400 USD')" class="w-full mt-8 py-3 rounded-full bg-oceanSlate text-white dark:bg-champagneGold dark:text-[#1A1615] text-xs uppercase tracking-wider font-semibold hover:opacity-90 transition-opacity" data-i18n="btnSelectT2">
+        <button onclick="selectPackage('Nivel 2: Sistema de Identidad Boutique', '$2,400 USD')" class="w-full mt-8 py-3 rounded-full bg-cabernetDark text-roseQuartz dark:bg-roseQuartz dark:text-cabernetDark text-xs uppercase tracking-wider font-semibold hover:opacity-90 transition-opacity" data-i18n="btnSelectT2">
           Elegir Kit Boutique
         </button>
       </div>
 
       <!-- Nivel 3 -->
-      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border border-gray-200 dark:border-gray-800 hover:border-gray-400 transition-colors">
+      <div class="glass-card rounded-3xl p-8 flex flex-col justify-between border border-[#EED8D6] dark:border-[#5C2A2E] hover:border-roseGold transition-colors">
         <div>
           <span class="text-[11px] uppercase tracking-[0.2em] font-sans text-gray-400 block">Nivel 03</span>
-          <h3 class="font-serif text-2xl text-oceanSlate dark:text-white mt-1" data-i18n="t3Title">Atelier de Arte Llave en Mano</h3>
+          <h3 class="font-serif text-2xl text-cabernetDark dark:text-roseQuartz mt-1" data-i18n="t3Title">Atelier Llave en Mano</h3>
           <p class="text-xs text-gray-500 mt-2" data-i18n="t3Desc">Señalética espacial, merchandising integral y dirección de arte digital total.</p>
           <div class="my-6">
-            <span class="font-serif text-4xl text-oceanSlate dark:text-white">$4,600</span>
+            <span class="font-serif text-4xl text-cabernetDark dark:text-roseQuartz">$4,600</span>
             <span class="text-xs text-gray-400"> USD (o 3 × $1,533)</span>
           </div>
           <ul class="space-y-3 text-xs text-gray-600 dark:text-gray-300">
-            <li class="flex items-center gap-2 font-medium text-oceanSlate dark:text-white"><span>✓</span> <strong>Todo lo de los Niveles 1 y 2</strong></li>
+            <li class="flex items-center gap-2 font-medium text-cabernetDark dark:text-white"><span>✓</span> <strong>Todo lo de los Niveles 1 y 2</strong></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t3f1">Planos de Vinilo Esmerilado para Fachada</span></li>
-            <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t3f2">Especificación Rótulo 3D Bronce en Pared</span></li>
+            <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t3f2">Especificación Rótulo 3D en Pared</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t3f3">Estilización de App de Reservas (Mindbody)</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t3f4">Set de 12 Iconos de Bienestar a Medida</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t3f5">Carpeta VIP y Pase Digital Apple Wallet</span></li>
             <li class="flex items-center gap-2"><span>✓</span> <span data-i18n="t3f6">Acompañamiento y Consultoría de 30 Días</span></li>
           </ul>
         </div>
-        <button onclick="selectPackage('Nivel 3: Atelier de Arte Llave en Mano', '$4,600 USD')" class="w-full mt-8 py-3 rounded-full border border-oceanSlate dark:border-gray-500 text-oceanSlate dark:text-white text-xs uppercase tracking-wider hover:bg-oceanSlate hover:text-white transition-colors" data-i18n="btnSelectT3">
+        <button onclick="selectPackage('Nivel 3: Atelier Llave en Mano', '$4,600 USD')" class="w-full mt-8 py-3 rounded-full border border-cabernetDark dark:border-roseGold text-cabernetDark dark:text-roseQuartz text-xs uppercase tracking-wider hover:bg-cabernetDark hover:text-white transition-colors" data-i18n="btnSelectT3">
           Elegir Atelier Total
         </button>
       </div>
@@ -602,59 +611,59 @@
 
   <!-- FORMULARIO DE APROBACIÓN -->
   <section id="aprobacion" class="max-w-4xl mx-auto px-6 py-14">
-    <div class="glass-card rounded-3xl p-8 md:p-12 custom-shadow border border-champagneGold/40">
+    <div class="glass-card rounded-3xl p-8 md:p-12 custom-shadow border border-roseGold/40">
       <div class="text-center mb-8">
-        <span class="text-xs uppercase tracking-[0.3em] text-champagneGold font-sans font-semibold" data-i18n="confirmBadge">Confirmación del Cliente</span>
-        <h2 class="font-serif text-3xl md:text-4xl text-oceanSlate dark:text-white mt-1" data-i18n="confirmTitle">Formaliza tu Elección</h2>
+        <span class="text-xs uppercase tracking-[0.3em] text-roseGold font-sans font-semibold" data-i18n="confirmBadge">Confirmación de la Marca</span>
+        <h2 class="font-serif text-3xl md:text-4xl text-cabernetDark dark:text-roseQuartz mt-1" data-i18n="confirmTitle">Formaliza tu Elección</h2>
         <p class="text-xs text-gray-500 dark:text-gray-400 mt-2" data-i18n="confirmSubtitle">
-          Selecciona tu obra favorita y nivel de atelier para generar la confirmación de inicio de producción.
+          Selecciona tu propuesta favorita y nivel de kit para generar tu orden de inicio inmediata.
         </p>
       </div>
 
       <form id="approvalForm" onsubmit="handleApproval(event)" class="space-y-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label class="block text-xs uppercase tracking-wider font-sans font-medium text-gray-700 dark:text-gray-300 mb-2" data-i18n="lblConceptSelect">Propuesta Elegida</label>
-            <select id="selectedConcept" class="w-full p-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-[#1A1C1E] text-sm">
-              <option value="Obra 01: La Cinta Cinética (Inspiración Brâncuși & Calder)">Obra 01: La Cinta Cinética (Inspiración Brâncuși & Calder)</option>
-              <option value="Obra 02: El Monolito Suspendido (Minimalismo Brutalista & Judd)" selected>Obra 02: El Monolito Suspendido (Minimalismo Brutalista & Judd)</option>
-              <option value="Obra 03: El Diafragma Biomórfico (Morfogénesis Arp & Noguchi)">Obra 03: El Diafragma Biomórfico (Morfogénesis Arp & Noguchi)</option>
+            <label class="block text-xs uppercase tracking-wider font-sans font-medium text-cabernetDark dark:text-roseQuartz mb-2" data-i18n="lblConceptSelect">Propuesta Elegida</label>
+            <select id="selectedConcept" class="w-full p-3 rounded-xl border border-[#EED8D6] dark:border-[#5C2A2E] bg-white dark:bg-[#1A0B0D] text-sm">
+              <option value="Propuesta 1: Editorial Arquitectónico (Alta Costura)">Propuesta 1: Editorial Arquitectónico (Alta Costura)</option>
+              <option value="Propuesta 2: La Cinta Ondulada (Escultórico)" selected>Propuesta 2: La Cinta Ondulada (Escultórico)</option>
+              <option value="Propuesta 3: El Arco Orgánico (Minúscula Acogedora)">Propuesta 3: El Arco Orgánico (Minúscula Acogedora)</option>
             </select>
           </div>
 
           <div>
-            <label class="block text-xs uppercase tracking-wider font-sans font-medium text-gray-700 dark:text-gray-300 mb-2" data-i18n="lblPackageSelect">Paquete de Inversión</label>
-            <select id="selectedPackage" class="w-full p-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-[#1A1C1E] text-sm">
+            <label class="block text-xs uppercase tracking-wider font-sans font-medium text-cabernetDark dark:text-roseQuartz mb-2" data-i18n="lblPackageSelect">Nivel de Inversión</label>
+            <select id="selectedPackage" class="w-full p-3 rounded-xl border border-[#EED8D6] dark:border-[#5C2A2E] bg-white dark:bg-[#1A0B0D] text-sm">
               <option value="Nivel 2: Sistema de Identidad Boutique ($2,400 USD)" selected>Nivel 2: Sistema de Identidad Boutique ($2,400 USD) — Recomendado</option>
-              <option value="Nivel 3: Atelier de Arte Llave en Mano ($4,600 USD)">Nivel 3: Atelier de Arte Llave en Mano ($4,600 USD)</option>
-              <option value="Nivel 1: Suite de Logo Escultórico ($850 USD)">Nivel 1: Suite de Logo Escultórico ($850 USD)</option>
+              <option value="Nivel 3: Atelier Llave en Mano ($4,600 USD)">Nivel 3: Atelier Llave en Mano ($4,600 USD)</option>
+              <option value="Nivel 1: Suite de Logo Esencial ($850 USD)">Nivel 1: Suite de Logo Esencial ($850 USD)</option>
             </select>
           </div>
         </div>
 
         <div>
-          <label class="block text-xs uppercase tracking-wider font-sans font-medium text-gray-700 dark:text-gray-300 mb-2" data-i18n="lblNotes">Notas o Deseos Particulares para el Espacio</label>
-          <textarea id="clientNotes" rows="3" placeholder="Ejemplo: Nos cautivó la Obra 02. Queremos replicar el relieve mural en bronce en el muro de entrada..." class="w-full p-3 rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-[#1A1C1E] text-sm"></textarea>
+          <label class="block text-xs uppercase tracking-wider font-sans font-medium text-cabernetDark dark:text-roseQuartz mb-2" data-i18n="lblNotes">Notas o Deseos para el Estudio</label>
+          <textarea id="clientNotes" rows="3" placeholder="Ejemplo: Nos encanta la Propuesta 1. Queremos ver pruebas del color Rose Quartz en las toallas de reformer..." class="w-full p-3 rounded-xl border border-[#EED8D6] dark:border-[#5C2A2E] bg-white dark:bg-[#1A0B0D] text-sm"></textarea>
         </div>
 
         <div class="text-center pt-2">
-          <button type="submit" class="bg-oceanSlate text-white dark:bg-champagneGold dark:text-[#1A1615] px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-sans font-semibold hover:opacity-90 transition-opacity shadow-lg" data-i18n="btnGenerateApproval">
+          <button type="submit" class="bg-cabernetDark text-roseQuartz dark:bg-roseQuartz dark:text-cabernetDark px-8 py-4 rounded-full text-xs uppercase tracking-[0.2em] font-sans font-semibold hover:opacity-90 transition-opacity shadow-lg" data-i18n="btnGenerateApproval">
             Generar Confirmación de Inicio
           </button>
         </div>
       </form>
 
       <!-- Caja de Confirmación y Enlaces -->
-      <div id="confirmationBox" class="mt-8 p-6 rounded-2xl bg-champagneGold/10 border border-champagneGold/30 hidden">
-        <h4 class="font-serif text-xl text-oceanSlate dark:text-white mb-2" data-i18n="confTitle">¡Resumen de Selección Listo!</h4>
-        <p class="text-xs text-gray-600 dark:text-gray-300 mb-4" data-i18n="confSubtitle">Copia el texto o envíalo directamente por WhatsApp o correo para formalizar el inicio:</p>
-        <pre id="confirmationText" class="p-4 bg-white dark:bg-black/40 rounded-xl text-xs font-mono text-gray-700 dark:text-gray-300 overflow-x-auto whitespace-pre-wrap"></pre>
+      <div id="confirmationBox" class="mt-8 p-6 rounded-2xl bg-roseQuartz/20 border border-roseGold/40 hidden">
+        <h4 class="font-serif text-xl text-cabernetDark dark:text-roseQuartz mb-2" data-i18n="confTitle">¡Resumen de Selección Listo!</h4>
+        <p class="text-xs text-gray-600 dark:text-roseSoft mb-4" data-i18n="confSubtitle">Copia el texto o envíalo directamente por WhatsApp o correo para formalizar el inicio:</p>
+        <pre id="confirmationText" class="p-4 bg-white dark:bg-black/40 rounded-xl text-xs font-mono text-cabernetDark dark:text-roseSoft overflow-x-auto whitespace-pre-wrap"></pre>
         <div class="mt-4 flex flex-wrap gap-3">
-          <button onclick="copyConfirmation()" class="px-4 py-2.5 rounded-lg bg-champagneGold text-[#1A1615] font-semibold text-xs font-sans uppercase tracking-wider hover:opacity-90" data-i18n="btnCopySummary">Copiar Resumen</button>
+          <button onclick="copyConfirmation()" class="px-4 py-2.5 rounded-lg bg-roseGold text-white font-semibold text-xs font-sans uppercase tracking-wider hover:opacity-90" data-i18n="btnCopySummary">Copiar Resumen</button>
           <a id="whatsappApprovalLink" href="#" target="_blank" class="px-4 py-2.5 rounded-lg bg-[#25D366] text-white text-xs font-sans uppercase tracking-wider hover:opacity-90 flex items-center gap-1.5 font-medium">
             <span>💬</span> <span data-i18n="btnSendWhatsApp">Enviar por WhatsApp</span>
           </a>
-          <a id="emailApprovalLink" href="#" class="px-4 py-2.5 rounded-lg border border-oceanSlate dark:border-gray-400 text-xs font-sans uppercase tracking-wider hover:bg-gray-100 dark:hover:bg-gray-800" data-i18n="btnSendEmail">
+          <a id="emailApprovalLink" href="#" class="px-4 py-2.5 rounded-lg border border-cabernetDark dark:border-roseGold text-xs font-sans uppercase tracking-wider hover:bg-roseQuartz/20" data-i18n="btnSendEmail">
             Enviar por Correo
           </a>
         </div>
@@ -663,10 +672,11 @@
   </section>
 
   <!-- PIE DE PÁGINA -->
-  <footer class="border-t border-gray-200 dark:border-gray-800 py-12 text-center text-xs text-gray-400 font-sans">
+  <footer class="border-t border-[#EED8D6] dark:border-[#5C2A2E] py-12 text-center text-xs text-gray-500 font-sans">
     <div class="max-w-7xl mx-auto px-6 space-y-3">
-      <div class="font-serif text-xl tracking-[0.25em] text-oceanSlate dark:text-gray-300">NAÏA PILATES STUDIO</div>
-      <p>© 2026 Naïa Pilates Studio. Todas las obras visuales, esculturas vectoriales y sistemas de estudio son confidenciales y de autoría protegida.</p>
+      <div class="font-serif text-xl tracking-[0.25em] text-cabernetDark dark:text-roseQuartz">NAÏA PILATES STUDIO</div>
+      <p class="italic">"A stronger, calmer, happier you"</p>
+      <p>© 2026 Naïa Pilates Studio. Todas las propuestas y especificaciones son propiedad intelectual y confidencial.</p>
     </div>
   </footer>
 
@@ -681,14 +691,14 @@
       const btnEn = document.getElementById('sub-en');
 
       if (lang === 'es') {
-        btnEs.className = "px-3 py-1 rounded-lg bg-oceanSlate text-white dark:bg-champagneGold dark:text-[#1A1615] font-medium transition-all";
-        btnEn.className = "px-3 py-1 rounded-lg text-gray-500 hover:text-oceanSlate dark:hover:text-white transition-all";
+        btnEs.className = "px-3 py-1 rounded-lg bg-cabernetDark text-roseQuartz dark:bg-roseQuartz dark:text-cabernetDark font-medium transition-all";
+        btnEn.className = "px-3 py-1 rounded-lg text-gray-500 hover:text-cabernetDark dark:hover:text-roseQuartz transition-all";
         document.getElementById('logo-img-1').src = 'assets/logos/concept1_es_nucleo_fluido.svg';
         document.getElementById('logo-img-2').src = 'assets/logos/concept2_es_aplomo_arquitectonico.svg';
         document.getElementById('logo-img-3').src = 'assets/logos/concept3_es_radiancia_vital.svg';
       } else {
-        btnEn.className = "px-3 py-1 rounded-lg bg-oceanSlate text-white dark:bg-champagneGold dark:text-[#1A1615] font-medium transition-all";
-        btnEs.className = "px-3 py-1 rounded-lg text-gray-500 hover:text-oceanSlate dark:hover:text-white transition-all";
+        btnEn.className = "px-3 py-1 rounded-lg bg-cabernetDark text-roseQuartz dark:bg-roseQuartz dark:text-cabernetDark font-medium transition-all";
+        btnEs.className = "px-3 py-1 rounded-lg text-gray-500 hover:text-cabernetDark dark:hover:text-roseQuartz transition-all";
         document.getElementById('logo-img-1').src = 'assets/logos/concept1_fluid_core.svg';
         document.getElementById('logo-img-2').src = 'assets/logos/concept2_architectural_poise.svg';
         document.getElementById('logo-img-3').src = 'assets/logos/concept3_vital_radiance.svg';
@@ -698,7 +708,7 @@
     function switchConcept(index) {
       document.querySelectorAll('.concept-view').forEach(el => el.classList.add('hidden'));
       document.querySelectorAll('[id^="tab-"]').forEach(tab => {
-        tab.classList.remove('border-sageGreen', 'text-sageGreen', 'border-champagneGold', 'text-champagneGold', 'border-terracotta', 'text-terracotta', 'font-semibold');
+        tab.classList.remove('border-cabernetDark', 'dark:border-roseQuartz', 'text-cabernetDark', 'dark:text-roseQuartz', 'font-semibold');
         tab.classList.add('border-transparent', 'text-gray-400');
       });
 
@@ -707,18 +717,9 @@
       
       selectedView.classList.remove('hidden');
       selectedTab.classList.remove('border-transparent', 'text-gray-400');
-      selectedTab.classList.add('font-semibold');
+      selectedTab.classList.add('border-cabernetDark', 'dark:border-roseQuartz', 'text-cabernetDark', 'dark:text-roseQuartz', 'font-semibold');
 
-      if (index === 1) {
-        selectedTab.classList.add('border-sageGreen', 'text-sageGreen');
-        document.getElementById('selectedConcept').selectedIndex = 0;
-      } else if (index === 2) {
-        selectedTab.classList.add('border-champagneGold', 'text-champagneGold');
-        document.getElementById('selectedConcept').selectedIndex = 1;
-      } else {
-        selectedTab.classList.add('border-terracotta', 'text-terracotta');
-        document.getElementById('selectedConcept').selectedIndex = 2;
-      }
+      document.getElementById('selectedConcept').selectedIndex = index - 1;
     }
 
     function copyHex(hex) {
@@ -745,7 +746,7 @@
       const notes = document.getElementById('clientNotes').value || (currentAppLang === 'es' ? "Sin ajustes adicionales requeridos." : "No additional adjustments requested.");
 
       const isEs = currentAppLang === 'es';
-      const text = `${isEs ? 'NAÏA PILATES STUDIO — ORDEN DE PRODUCCIÓN DE MARCA' : 'NAÏA PILATES STUDIO — ATELIER KICKOFF APPROVAL'}\n---------------------------------------------\n${isEs ? 'Obra Elegida' : 'Concept Selected'}: ${concept}\n${isEs ? 'Nivel de Inversión' : 'Package Selected'}: ${pkg}\n${isEs ? 'Notas del Estudio' : 'Client Notes'}: ${notes}\n${isEs ? 'Fecha' : 'Date'}: ${new Date().toLocaleDateString()}\n${isEs ? 'Estado: Aprobado para Producción' : 'Status: Approved for Production'}`;
+      const text = `${isEs ? 'NAÏA PILATES STUDIO — ORDEN DE PRODUCCIÓN DE MARCA' : 'NAÏA PILATES STUDIO — BRAND KICKOFF APPROVAL'}\n---------------------------------------------\n${isEs ? 'Propuesta Elegida' : 'Concept Selected'}: ${concept}\n${isEs ? 'Nivel de Inversión' : 'Package Selected'}: ${pkg}\n${isEs ? 'Notas del Estudio' : 'Client Notes'}: ${notes}\n${isEs ? 'Lema de Firma' : 'Brand Tagline'}: A stronger, calmer, happier you\n${isEs ? 'Fecha' : 'Date'}: ${new Date().toLocaleDateString()}\n${isEs ? 'Estado: Aprobado para Producción' : 'Status: Approved for Production'}`;
 
       document.getElementById('confirmationText').textContent = text;
       document.getElementById('confirmationBox').classList.remove('hidden');
@@ -778,41 +779,47 @@
 
     const translations = {
       es: {
-        navSubtitle: "Atelier de Movimiento",
-        navConcepts: "3 Obras de Arte",
-        navExperience: "Santuario Galería",
+        navSubtitle: "Pilates Studio",
+        navMoodboard: "Matriz Creativa",
+        navConcepts: "3 Propuestas",
+        navExperience: "Santuario en Acción",
         navComparison: "Logo vs. Sistema",
         navPricing: "Inversión",
-        btnReview: "Elegir Obra",
-        heroBadge: "Dirección de Arte de Vanguardia • Propuestas Escultóricas",
-        heroTitle: "La Escultura del Movimiento",
-        heroDesc: "Tres exploraciones artísticas para Naïa Pilates Studio. Inspiradas en la escultura cinética de Brâncuși, el equilibrio gravitacional de Calder y las formas biomórficas de Arp y Noguchi.",
-        statConcepts: "Esculturas Vectoriales",
-        statMockups: "Renders de Galería",
-        statTiers: "Niveles de Atelier",
-        manifestoBadge: "Manifiesto Estético",
-        manifestoTitle: "Contrología como Obra Viva",
-        conceptsBadge: "Propuestas de Galería",
-        conceptsTitle: "Tres Esculturas de Marca",
+        btnReview: "Elegir Propuesta",
+        heroBadge: "Identidad Visual Curada • Paleta Cabernet & Rose Quartz",
+        heroTitle: "A Stronger, Calmer, Happier You",
+        heroDesc: "Tres propuestas de marca desarrolladas a partir de la matriz de exploración gráfica de Naïa Pilates Studio. Una fusión entre arquitectura clásica, curvas cinéticas de reformer y el calor contemporáneo de la terracota borgoña.",
+        statMatrix: "Matriz Creativa (9 Logos)",
+        statConcepts: "Propuestas Vectoriales",
+        statMockups: "Renders de Estudio",
+        matrixBadge: "Punto de Partida Creativo",
+        matrixTitle: "La Matriz de Inspiración",
+        matrixSubtitle: "De las 9 exploraciones iniciales de tipografía y relieves en 3D sobre fondo borgoña, seleccionamos y refinamos las tres direcciones más potentes y versátiles para la identidad completa del estudio.",
+        proposalsBadge: "Propuestas Vectoriales",
+        proposalsTitle: "Tres Caminos de Identidad",
+        proposalsSubtitle: "Diseñadas en vectores de alta precisión, listas para señalética exterior, bordado en calcetines y papelería.",
         lblSubtitle: "Subtítulo:"
       },
       en: {
-        navSubtitle: "Movement Atelier",
-        navConcepts: "3 Artworks",
-        navExperience: "Gallery Sanctuary",
+        navSubtitle: "Pilates Studio",
+        navMoodboard: "Creative Matrix",
+        navConcepts: "3 Proposals",
+        navExperience: "Studio in Action",
         navComparison: "Logo vs System",
         navPricing: "Investment",
-        btnReview: "Choose Artwork",
-        heroBadge: "Avant-Garde Art Direction • Sculptural Proposals",
-        heroTitle: "The Sculpture of Movement",
-        heroDesc: "Three artistic explorations for Naïa Pilates Studio. Inspired by Brâncuși's kinetic sculpture, Calder's gravitational equilibrium, and Arp and Noguchi's biomorphic morphometrics.",
-        statConcepts: "Vector Sculptures",
-        statMockups: "Gallery Renders",
-        statTiers: "Atelier Tiers",
-        manifestoBadge: "Aesthetic Manifesto",
-        manifestoTitle: "Contrology as Living Art",
-        conceptsBadge: "Gallery Proposals",
-        conceptsTitle: "Three Brand Sculptures",
+        btnReview: "Choose Proposal",
+        heroBadge: "Curated Brand Identity • Cabernet & Rose Quartz Palette",
+        heroTitle: "A Stronger, Calmer, Happier You",
+        heroDesc: "Three brand proposals derived from the graphic exploration matrix for Naïa Pilates Studio. Bridging classical architecture, kinetic reformer curves, and contemporary warm burgundy terracotta.",
+        statMatrix: "Creative Matrix (9 Logos)",
+        statConcepts: "Vector Proposals",
+        statMockups: "Studio Renders",
+        matrixBadge: "Creative Starting Point",
+        matrixTitle: "The Inspiration Matrix",
+        matrixSubtitle: "From the 9 initial 3D embossed typographic explorations on a rich burgundy background, we curated and refined the three strongest and most versatile directions for the full studio identity.",
+        proposalsBadge: "Vector Proposals",
+        proposalsTitle: "Three Brand Paths",
+        proposalsSubtitle: "Crafted in high-precision vectors, ready for exterior signage, grip sock embroidery, and luxury print.",
         lblSubtitle: "Subtitle:"
       }
     };

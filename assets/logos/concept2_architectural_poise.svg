@@ -1,79 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" height="100%">
   <defs>
-    <!-- Obsidian Monolith & Brushed Champagne Metallics -->
-    <linearGradient id="monolithObsidian" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2D2724" />
-      <stop offset="50%" stop-color="#1B1715" />
-      <stop offset="100%" stop-color="#0E0C0B" />
+    <linearGradient id="waveRoseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE1DF" />
+      <stop offset="50%" stop-color="#F2B8B5" />
+      <stop offset="100%" stop-color="#D99490" />
     </linearGradient>
-    <linearGradient id="champagneSpecular" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EAD9C2" />
-      <stop offset="40%" stop-color="#C5A47C" />
-      <stop offset="100%" stop-color="#93724B" />
+    <linearGradient id="cabernetPlinth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#552227" />
+      <stop offset="100%" stop-color="#381418" />
     </linearGradient>
-    <filter id="monolithShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0E0C0B" flood-opacity="0.14" />
+    <filter id="softGlowRose" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#2D1113" flood-opacity="0.22" />
     </filter>
   </defs>
 
   <style>
-    .monolith-title {
-      font-family: 'Bodoni MT', 'Didot', 'Playfair Display', serif;
-      font-size: 72px;
-      font-weight: 400;
-      letter-spacing: 0.35em;
-      fill: #1A1614;
-    }
-    .monolith-sub {
-      font-family: 'Futura', 'Century Gothic', 'Montserrat', sans-serif;
-      font-size: 10.5px;
+    .ribbon-title {
+      font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+      font-size: 74px;
       font-weight: 500;
-      letter-spacing: 0.65em;
-      fill: #7D736C;
+      letter-spacing: 0.22em;
+      fill: #461E22;
+    }
+    .ribbon-sub {
+      font-family: 'Montserrat', 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.52em;
+      fill: #8D5459;
     }
   </style>
 
-  <rect width="860" height="340" fill="transparent" />
+  <rect width="880" height="340" fill="transparent" />
 
   <g transform="translate(60, 45)">
-    <!-- MONOLITH EMBLEM: The Suspended Monolith (Equilibrium & Void) -->
-    <g id="monolith-sculpture" transform="translate(35, 12)" filter="url(#monolithShadow)">
-      <!-- Spatial Rhombus & Tension Frame -->
-      <polygon points="100,6 182,112 100,218 18,112" fill="none" stroke="#EAE4DC" stroke-width="0.8" />
-      <circle cx="100" cy="112" r="76" fill="#FDFBF8" stroke="#DCD3C7" stroke-width="0.6" />
+    <!-- ICON / EMBLEM: Undulating Wave 'N' with Sculptural Ribbon Loops (Row 3, Col 1) -->
+    <g id="icon-wave-ribbon" transform="translate(25, 12)" filter="url(#softGlowRose)">
+      <!-- Soft Pill Plinth -->
+      <rect x="15" y="10" width="170" height="195" rx="42" fill="#522428" stroke="#EED8D6" stroke-width="1.2" />
 
-      <!-- Left Monolithic Column: Solid Obsidian Pillar -->
-      <path d="M 72 65 L 82 65 L 82 159 L 72 159 Z" fill="url(#monolithObsidian)" />
-      <!-- Top and Bottom Inset Chisels -->
-      <polygon points="72,65 82,65 77,58" fill="url(#champagneSpecular)" />
-      <polygon points="72,159 82,159 77,166" fill="url(#champagneSpecular)" />
+      <!-- Sculptural Fluid Wave 'N' with undulating ribbon base -->
+      <!-- Left Stem with curved fluid top -->
+      <path d="M 62 165 C 60 125, 62 82, 68 62 C 70 56, 76 56, 78 62 C 82 85, 80 128, 76 165 Z" 
+            fill="url(#waveRoseGrad)" />
 
-      <!-- Right Monolithic Column: Slender Parallel Axis -->
-      <path d="M 118 65 L 128 65 L 128 159 L 118 159 Z" fill="url(#monolithObsidian)" />
-      <polygon points="118,65 128,65 123,58" fill="url(#champagneSpecular)" />
-      <polygon points="118,159 128,159 123,166" fill="url(#champagneSpecular)" />
+      <!-- Continuous Fluid Wave Diagonal with undulating base loop -->
+      <path d="M 72 65 C 80 85, 105 138, 125 158 C 130 164, 136 162, 134 154 C 122 125, 105 82, 92 62 C 86 52, 76 52, 72 65 Z" 
+            fill="#FCE1DF" opacity="0.9" />
 
-      <!-- Gravitational Tension Diagonal: Micro-Chiseled Blade Traverse -->
-      <path d="M 82 68 L 118 156 L 114 158 L 78 70 Z" fill="url(#champagneSpecular)" opacity="0.95" />
+      <!-- Undulating Base Ribbon Swoosh (The signature wave from user board) -->
+      <path d="M 52 168 C 65 158, 85 174, 105 162 C 125 150, 140 166, 150 162" 
+            fill="none" stroke="url(#waveRoseGrad)" stroke-width="3" stroke-linecap="round" />
 
-      <!-- The Suspended Counterweight Spheres (Diéresis in Kinetic Orbit) -->
-      <line x1="88" y1="42" x2="88" y2="28" stroke="#B39266" stroke-width="0.75" stroke-dasharray="1 2"/>
-      <circle cx="88" cy="24" r="5" fill="url(#champagneSpecular)" />
+      <!-- Right Stem -->
+      <path d="M 125 165 C 128 135, 132 88, 136 62 C 138 56, 144 56, 145 62 C 148 88, 144 135, 140 165 Z" 
+            fill="url(#waveRoseGrad)" />
 
-      <line x1="112" y1="42" x2="112" y2="20" stroke="#B39266" stroke-width="0.75" stroke-dasharray="1 2"/>
-      <circle cx="112" cy="16" r="4" fill="url(#champagneSpecular)" />
-
-      <!-- Axis of Horizon Equilibrium -->
-      <line x1="38" y1="112" x2="162" y2="112" stroke="#C5A47C" stroke-width="0.75" stroke-dasharray="2 3" opacity="0.7"/>
+      <!-- Twin Wave Diéresis Droplets -->
+      <circle cx="96" cy="38" r="4.5" fill="url(#waveRoseGrad)" />
+      <circle cx="112" cy="38" r="4.5" fill="url(#waveRoseGrad)" />
     </g>
 
-    <!-- TYPOGRAPHY: Editorial Monolith Wordmark -->
-    <g transform="translate(295, 118)">
-      <text x="0" y="0" class="monolith-title">NAÏA</text>
-      <text x="5" y="38" class="monolith-sub">PILATES STUDIO</text>
+    <!-- TYPOGRAPHIC WORDMARK: Sculptural Wave NAÏA -->
+    <g transform="translate(290, 118)">
+      <text x="0" y="0" class="ribbon-title">NAÏA</text>
+      
+      <!-- Subtitle -->
+      <text x="5" y="38" class="ribbon-sub">PILATES STUDIO</text>
 
-      <!-- Blade Accent Line -->
-      <line x1="4" y1="14" x2="365" y2="14" stroke="url(#champagneSpecular)" stroke-width="1.2" />
+      <!-- Undulating Accent Wave Line -->
+      <path d="M 5 14 Q 90 20, 180 14 T 355 14" fill="none" stroke="#DCAEAB" stroke-width="1.2" stroke-linecap="round" />
+      <circle cx="180" cy="14" r="2.5" fill="#522428" />
     </g>
   </g>
 </svg>

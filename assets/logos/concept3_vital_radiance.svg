@@ -1,77 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 340" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" height="100%">
   <defs>
-    <!-- Baked Terracotta Clay & Sun-Dune Patina -->
-    <linearGradient id="terracottaBiomorphic" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#B25541" />
-      <stop offset="45%" stop-color="#934331" />
-      <stop offset="100%" stop-color="#722F20" />
+    <linearGradient id="roseArchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE1DF" />
+      <stop offset="50%" stop-color="#F2B8B5" />
+      <stop offset="100%" stop-color="#DE9995" />
     </linearGradient>
-    <linearGradient id="duneSpecular" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#EAB17F" />
-      <stop offset="60%" stop-color="#CF854E" />
-      <stop offset="100%" stop-color="#9B592E" />
-    </linearGradient>
-    <filter id="biomorphicShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#552216" flood-opacity="0.12" />
+    <filter id="softPillShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#2D1113" flood-opacity="0.22" />
     </filter>
   </defs>
 
   <style>
-    .bio-title {
-      font-family: 'Tenor Sans', 'Playfair Display', serif;
-      font-size: 70px;
+    .arch-lowercase {
+      font-family: 'Century Gothic', 'Montserrat', 'Inter', sans-serif;
+      font-size: 82px;
       font-weight: 400;
-      letter-spacing: 0.28em;
-      fill: #38241D;
+      letter-spacing: 0.12em;
+      fill: #461E22;
     }
-    .bio-sub {
-      font-family: 'Avenir Next', 'Montserrat', sans-serif;
+    .arch-lowercase-sub {
+      font-family: 'Montserrat', 'Inter', sans-serif;
       font-size: 11px;
       font-weight: 500;
       letter-spacing: 0.52em;
-      fill: #934331;
+      fill: #8D5459;
     }
   </style>
 
-  <rect width="860" height="340" fill="transparent" />
+  <rect width="880" height="340" fill="transparent" />
 
   <g transform="translate(60, 45)">
-    <!-- EMBLEM: The Biomorphic Diaphragm (Arp Morphogenesis Relief) -->
-    <g id="biomorphic-sculpture" transform="translate(35, 10)" filter="url(#biomorphicShadow)">
-      <!-- Outer Asymmetric Breath Vessel (Living contour of the thoracic ribcage) -->
-      <path d="M 100 24 C 145 20, 185 62, 178 114 C 172 165, 142 198, 98 198 C 50 198, 22 155, 26 104 C 30 52, 60 28, 100 24 Z" 
-            fill="#FDFBF7" stroke="#EFE5D8" stroke-width="1.2" />
+    <!-- ICON / EMBLEM: Modernist Organic Arch 'n' with Twin Diéresis (Row 1, Col 1) -->
+    <g id="icon-arch-organic" transform="translate(25, 12)" filter="url(#softPillShadow)">
+      <!-- Soft Pill Frame -->
+      <rect x="15" y="10" width="170" height="195" rx="55" fill="#522428" stroke="#EED8D6" stroke-width="1.2" />
 
-      <!-- Inner Sgraffito Breath Ribs (Noguchi Stone Incisions) -->
-      <path d="M 45 104 C 65 72, 85 52, 100 52 C 122 52, 148 78, 158 104" fill="none" stroke="url(#duneSpecular)" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
-      <path d="M 48 116 C 68 145, 88 165, 102 165 C 122 165, 145 142, 154 116" fill="none" stroke="url(#duneSpecular)" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+      <!-- Minimalist Organic Arch 'n' with circular bowl -->
+      <path d="M 60 162 L 60 110 C 60 82, 80 66, 100 66 C 120 66, 140 82, 140 110 L 140 162" 
+            fill="none" stroke="url(#roseArchGrad)" stroke-width="12" stroke-linecap="round" />
 
-      <!-- Biomorphic Sculptural 'N' Core -->
-      <!-- Left Stem: Tapered organic bone-and-breath column -->
-      <path d="M 76 150 C 74 122, 78 88, 84 66 C 86 60, 92 62, 92 68 C 90 92, 86 130, 84 150 Z" 
-            fill="url(#terracottaBiomorphic)" />
-      
-      <!-- Flowing Interconnected Diaphragm Arc Traverse -->
-      <path d="M 84 68 C 96 90, 118 135, 128 152 C 132 158, 137 154, 134 148 C 124 124, 106 82, 94 66 C 90 60, 84 62, 84 68 Z" 
-            fill="#55604C" opacity="0.9" />
+      <!-- Left inner stem anchor -->
+      <circle cx="60" cy="162" r="6" fill="#FCE1DF" />
+      <circle cx="140" cy="162" r="6" fill="#FCE1DF" />
 
-      <!-- Right Stem: Ascending organic wave -->
-      <path d="M 124 150 C 126 128, 130 90, 132 72 C 134 66, 140 68, 138 75 C 134 100, 130 132, 128 150 Z" 
-            fill="url(#terracottaBiomorphic)" />
-
-      <!-- Twin Organic Pebble Diéresis (Suspended Breath Stones) -->
-      <ellipse cx="94" cy="46" rx="4.5" ry="3.8" fill="url(#duneSpecular)" transform="rotate(-15 94 46)" />
-      <ellipse cx="110" cy="42" rx="4" ry="4.5" fill="url(#duneSpecular)" transform="rotate(20 110 42)" />
+      <!-- Twin Modernist Diéresis Spheres -->
+      <circle cx="91" cy="40" r="5" fill="url(#roseArchGrad)" />
+      <circle cx="109" cy="40" r="5" fill="url(#roseArchGrad)" />
     </g>
 
-    <!-- TYPOGRAPHY: Warm Avant-Garde Wordmark -->
-    <g transform="translate(295, 118)">
-      <text x="0" y="0" class="bio-title">NAÏA</text>
-      <text x="4" y="38" class="bio-sub">PILATES STUDIO</text>
+    <!-- TYPOGRAPHIC WORDMARK: Lowercase naïa (Row 1, Col 1 of user board) -->
+    <g transform="translate(290, 118)">
+      <text x="0" y="0" class="arch-lowercase">naïa</text>
+      
+      <!-- Subtitle -->
+      <text x="4" y="38" class="arch-lowercase-sub">PILATES STUDIO</text>
 
-      <!-- Warm Organic Horizon -->
-      <line x1="4" y1="14" x2="350" y2="14" stroke="#E6C8B8" stroke-width="1.2" />
-      <circle cx="160" cy="14" r="2.5" fill="#934331" />
+      <!-- Soft Rounded Line Accent -->
+      <line x1="4" y1="14" x2="340" y2="14" stroke="#DCAEAB" stroke-width="1.2" stroke-linecap="round" />
+      <circle cx="165" cy="14" r="2.5" fill="#522428" />
     </g>
   </g>
 </svg>
