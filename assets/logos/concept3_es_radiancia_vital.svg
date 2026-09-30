@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="terracottaGradEs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BC624E" />
+      <stop offset="50%" stop-color="#A45A49" />
+      <stop offset="100%" stop-color="#884232" />
+    </linearGradient>
+    <linearGradient id="sunGradEs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5A66E" />
+      <stop offset="100%" stop-color="#C97F49" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .vital-title-es {
+      font-family: 'Tenor Sans', 'Playfair Display', serif;
+      font-size: 66px;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+      fill: #423028;
+    }
+    .vital-subtitle-es {
+      font-family: 'Avenir Next', 'Montserrat', sans-serif;
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.38em;
+      fill: #A45A49;
+    }
+  </style>
+
+  <rect width="840" height="320" fill="transparent" />
+
+  <g transform="translate(50, 40)">
+    <!-- SELLO: Respiración Cíclica y Arcos de Expansión Torácica -->
+    <g id="vital-icon-es" transform="translate(45, 12)">
+      <circle cx="100" cy="110" r="92" fill="#FDFBF7" stroke="#EFE5D8" stroke-width="1.5" />
+
+      <!-- Arcos radiales de respiración -->
+      <g stroke="url(#sunGradEs)" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85">
+        <path d="M 100 28 C 100 45, 100 45, 100 55" />
+        <path d="M 100 165 C 100 175, 100 175, 100 192" />
+        <path d="M 18 110 C 35 110, 35 110, 45 110" />
+        <path d="M 155 110 C 165 110, 165 110, 182 110" />
+
+        <path d="M 42 52 C 55 65, 65 75, 74 84" />
+        <path d="M 158 52 C 145 65, 135 75, 126 84" />
+        <path d="M 42 168 C 55 155, 65 145, 74 136" />
+        <path d="M 158 168 C 145 155, 135 145, 126 136" />
+      </g>
+
+      <circle cx="100" cy="110" r="58" fill="none" stroke="url(#terracottaGradEs)" stroke-width="1.8" />
+
+      <!-- Escultura botánica 'N' -->
+      <path d="M 82 142 C 82 120, 84 95, 87 78 C 88 74, 93 74, 94 78 C 96 90, 94 125, 90 142 Z" 
+            fill="url(#terracottaGradEs)" />
+      
+      <path d="M 86 80 C 95 95, 110 125, 117 140 C 120 144, 124 142, 123 138 C 118 120, 104 90, 95 78 C 91 73, 87 75, 86 80 Z" 
+            fill="#5C6B55" opacity="0.9" />
+
+      <path d="M 112 142 C 114 125, 116 90, 118 78 C 119 74, 124 74, 124 78 C 125 95, 123 120, 120 142 Z" 
+            fill="url(#terracottaGradEs)" />
+
+      <!-- Esferas solares gemelas (Diéresis) -->
+      <circle cx="96" cy="62" r="3.5" fill="url(#sunGradEs)" />
+      <circle cx="109" cy="62" r="3.5" fill="url(#sunGradEs)" />
+    </g>
+
+    <!-- TIPOGRAFÍA EN ESPAÑOL -->
+    <g transform="translate(290, 115)">
+      <text x="0" y="0" class="vital-title-es">NAÏA</text>
+      <text x="4" y="38" class="vital-subtitle-es">ESTUDIO DE PILATES</text>
+      <line x1="4" y1="16" x2="350" y2="16" stroke="#E5C7B5" stroke-width="1.5" />
+      <circle cx="177" cy="16" r="3" fill="#A45A49" />
+    </g>
+  </g>
+</svg>
